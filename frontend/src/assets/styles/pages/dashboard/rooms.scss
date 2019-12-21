@@ -1,0 +1,126 @@
+@import "assets/styles/variables";
+
+.your-listing {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .listing-all {
+    @media (max-width: $break-767) {
+      text-align: center;
+    }
+    li {
+      border-bottom: 1px solid $-primary-bor-co;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      // list-style: none;
+    }
+    .media-cover {
+      border: 1px solid $-primary-bor-co;
+      box-shadow: $-primary-box-shodaw;
+      border-radius: 7px;
+      overflow: hidden;
+      position: unset;
+    }
+    .list-ink {
+      a {
+        color: #23537a;
+      }
+
+      font-size: 20px;
+      font-weight: 700;
+      @media (max-width: $break-767) {
+        padding-top: 10px;
+        display: block;
+      }
+    }
+    .actions {
+      a {
+        font-size: 15px;
+        color: $gray;
+      }
+    }
+    .listing-criteria-header {
+      .field-wrapper {
+        margin: 0;
+      }
+      .list-noti {
+        font-size: 13px;
+        margin-top: 5px;
+        display: inline-block;
+        color: $gray;
+        @media (max-width: $break-767) {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.field-wrapper {
+  position: $rel;
+  margin-bottom: 20px;
+  label {
+    position: $ab;
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    color: $gray;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    opacity: 0;
+    margin: 0;
+  }
+
+  label.on {
+    color: $blue;
+  }
+
+  label.show {
+    top: -7px;
+    opacity: 1;
+    background: $white;
+    + input {
+      border-color: $blue;
+    }
+    + select {
+      border-color: $blue;
+    }
+    @media (max-width: $break-767) {
+      font-size: 11px;
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+
+  option {
+    color: $dark;
+  }
+  .watermark {
+    color: $gray;
+  }
+  .form-in {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid $-primary-bor-co;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(204, 204, 204, 0.16);
+    @media (max-width: $break-767) {
+      font-size: 13px;
+    }
+  }
+}
+
+select {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

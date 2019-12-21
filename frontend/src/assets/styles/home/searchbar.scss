@@ -1,0 +1,435 @@
+.saved-search-wrapper {
+  position: relative;
+}
+
+.saved-search-wrapper .menu {
+  text-align: left;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-shadow: 0 1px 5px rgba(50, 50, 50, 0.2);
+  box-shadow: 0 1px 5px rgba(50, 50, 50, 0.2);
+  border-top: 0;
+  position: absolute;
+  z-index: 99;
+  top: 100%;
+  width: 100%;
+}
+
+.saved-search-wrapper .location.menu-open {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.saved-search-wrapper .menu-option {
+  font-size: 14px;
+  line-height: 44px;
+  height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #c3c0c0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.saved-search-wrapper .menu-option.focused *,
+.saved-search-wrapper .menu-option:focus * {
+  color: #fff;
+}
+
+.saved-search-wrapper .search-locale {
+  color: #565a5c;
+  font-weight: 700;
+}
+
+.saved-search-wrapper .icon {
+  margin-left: 0.15em;
+  margin-right: 0.45em;
+  font-size: 24px;
+  vertical-align: -3px;
+}
+
+.saved-search {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.saved-search .saved-search-date,
+.saved-search .saved-search-guests,
+.saved-search .search-location {
+  display: table-cell;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.saved-search .search-location {
+  width: 370px;
+  max-width: 370px;
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+  .saved-search .search-location {
+    width: 210px;
+    max-width: 210px;
+  }
+}
+
+.saved-search .saved-search-date {
+  width: 260px;
+  max-width: 260px;
+}
+
+.saved-search .saved-search-guests {
+  max-width: 30%;
+  padding-left: 10px;
+}
+
+.saved-search .date-end,
+.saved-search .date-start,
+.saved-search .seperator {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.saved-search .date-start {
+  width: 36%;
+}
+
+.saved-search .seperator {
+  width: 14%;
+  text-overflow: none;
+  text-align: center;
+}
+
+.input-placeholder-group {
+  position: relative;
+  display: inline-block;
+}
+
+.location-suggestions {
+  background: #f5f5f5;
+  border-top: 1px solid #e6e6e6;
+}
+
+.input-placeholder-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-size: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: text;
+  color: #82888a;
+}
+
+.search-top-destinations {
+  color: #565a5c;
+  border-bottom: 1px solid #c4c4c4;
+  margin: 0;
+}
+
+.search-destination-group {
+  text-align: center;
+}
+
+.search-top-destination {
+  padding-left: 1px;
+  padding-right: 5px;
+}
+
+.search-top-destination:hover {
+  color: #fff;
+  background: #0190e2;
+  cursor: pointer;
+}
+
+.search-top-destination-tips {
+  padding-left: 15px;
+}
+
+.searchbar.rjsearchbar form {
+  margin-bottom: 0;
+}
+
+.searchbar.rjsearchbar input {
+  padding: 25px 10px;
+}
+
+.searchbar.rjsearchbar input:focus,
+.searchbar.rjsearchbar select:focus,
+.searchbar.rjsearchbar textarea:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.searchbar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.searchbar .select,
+.searchbar button,
+.searchbar input,
+.searchbar select {
+  display: block;
+  height: 44px;
+}
+
+.searchbar input:focus {
+  position: relative;
+  z-index: 1;
+}
+
+.searchbar__input-wrapper {
+  float: left;
+  input:focus {
+    outline: none;
+  }
+}
+
+.searchbar__checkin,
+.searchbar__checkout,
+.searchbar__guests,
+.searchbar__location,
+.searchbar__submit {
+  float: left;
+  margin: 0 -1px 0 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  vertical-align: middle;
+}
+
+.searchbar__submit {
+  border: 0;
+  color: white;
+  min-width: 100px;
+}
+.searchbar__location {
+  width: 220px;
+}
+
+.searchbar__location input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.searchbar__location-error {
+  background: #fff;
+  background: hsla(0, 0%, 100%, 0.8);
+  border-radius: 0 0 3px 3px;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  top: 100%;
+  width: 220px;
+}
+
+.searchbar__checkin,
+.searchbar__checkout {
+  width: 130px;
+}
+
+.searchbar__checkin input,
+.searchbar__checkout input {
+  border-radius: 0;
+}
+
+.searchbar__guests select {
+  border-radius: 0;
+  border-right: 0;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+.searchbar__submit {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  display: inline-block;
+}
+
+.searchbar button.btn-primary.btn {
+  border-radius: 50px;
+  background: #00a8f9;
+  border-color: #00a8f9;
+}
+
+.searchbar button.btn-primary.btn:hover {
+  background: #37444b;
+  border-color: #37444b;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+@media (min-width: 1100px) {
+  .searchbar__location,
+  .searchbar__location-error {
+    width: 380px;
+  }
+}
+
+.hero #searchbar form.simple-search {
+  display: flex;
+}
+.hero #searchbar .select:before {
+  color: #000;
+  top: 50%;
+  margin-top: -4px;
+  padding: 0;
+}
+.hero #searchbar .searchbar {
+  background: #fff;
+  border: 1px solid #00a8f9;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+.hero #searchbar .searchbar .saved-search-wrapper > label {
+  margin: 0;
+  height: 100%;
+}
+.hero #searchbar .searchbar #location {
+  border: 0;
+  height: 100%;
+  padding-left: 50px;
+  background: url(https://res.cloudinary.com/vacation-rentals/image/upload/v1553977641/images/se.webp)
+    no-repeat 20px;
+}
+.hero #searchbar .searchbar .ui-datepicker-target {
+  border-width: 0 0 0 1px;
+  height: 100%;
+}
+.hero #searchbar .searchbar select#guests {
+  border: 1px solid #c4c4c4;
+  border-width: 0 1px;
+  height: 100%;
+}
+.hero #searchbar .searchbar button#submit_location {
+  margin: 10px 15px 10px 10px;
+  border-radius: 24px;
+  height: auto;
+  // line-height: 46px;
+}
+.hero #searchbar form.simple-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero #searchbar .searchbar .select {
+  height: 100%;
+}
+.searchbar__location,
+.searchbar__location-error {
+  width: 32%;
+}
+.new_home.home_view .header--sm {
+  background: transparent !important;
+}
+.searchbar__location-error {
+  color: #00a8f9;
+  background: 0;
+  margin-top: 5px;
+}
+.searchbar__location-error {
+  color: #00a8f9;
+  background: 0;
+  margin-top: -1px;
+  position: absolute;
+}
+.hero
+  #searchbar
+  .searchbar
+  .saved-search-wrapper
+  > label.input-placeholder-group.searchbar__checkin,
+.hero
+  #searchbar
+  .searchbar
+  .saved-search-wrapper
+  > label.input-placeholder-group.searchbar__checkout {
+  width: 24%;
+}
+.hero
+  #searchbar
+  .searchbar
+  .saved-search-wrapper
+  > label.input-placeholder-group.searchbar__checkin
+  > input,
+.hero
+  #searchbar
+  .searchbar
+  .saved-search-wrapper
+  > label.input-placeholder-group.searchbar__checkout
+  > input {
+  padding-left: 45px;
+  background: url(https://res.cloudinary.com/vacation-rentals/image/upload/v1553977641/images/caln.webp)
+    no-repeat 12px;
+  // background: url(https://res.cloudinary.com/vacation-rentals/image/upload/v1575222740/images/icons.webp);
+  // background-repeat: no-repeat;
+  // background-position: -19px -140px;
+  // width: 24px; height: 24px;
+}
+.hero #searchbar .searchbar .searchbar__guests {
+  width: 20%;
+}
+.hero #searchbar .searchbar .searchbar__guests {
+  width: 20%;
+}
+
+.searchbar .input-placeholder-group input,
+.searchbar .searchbar__guests select {
+  width: 100%;
+}
+
+.hero__content-footer {
+  bottom: -180px;
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  .hero__content-footer {
+    bottom: 80px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .input-placeholder-group.searchbar__checkin,
+  .input-placeholder-group.searchbar__checkout,
+  .searchbar__guests {
+    display: none;
+  }
+  .input-placeholder-group.searchbar__location {
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero #searchbar .searchbar {
+    box-shadow: none !important;
+    border-radius: 0;
+    background: none;
+    border: 0;
+
+    form.simple-search {
+      display: block;
+    }
+
+    .saved-search-wrapper.searchbar__input-wrapper {
+      width: 100%;
+      background: white;
+      border-radius: 25px;
+      height: 50px;
+    }
+  }
+
+  .hero #searchbar .searchbar button#submit_location {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 50px;
+  }
+}

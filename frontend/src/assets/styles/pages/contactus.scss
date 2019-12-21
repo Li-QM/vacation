@@ -1,0 +1,237 @@
+.contact-page {
+  margin: 0 0 45px;
+  position: relative;
+
+	[type=email]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=url]:focus, input[type=checkbox]:focus, input[type=radio]:focus, select:focus, textarea:focus {
+    outline: none;
+	}
+	input:focus, select:focus, textarea:focus {
+    box-shadow: 0 2px 4px #d5edf7;
+}
+[type=date], [type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], input[type=checkbox], input[type=radio], select, textarea {
+	transition: border-color .2s;
+}
+
+	.container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+
+		@media (min-width: 576px) {
+			max-width: 540px;
+		}
+		@media (min-width: 768px) {
+			max-width: 720px;
+		}
+		@media (min-width: 992px) {
+			max-width: 960px;
+		}
+		@media (min-width: 1200px) {
+			max-width: 1140px;
+		}
+	}
+	
+  .contact_inner {
+		.contact-map iframe {
+			min-height: 400px;
+		}
+
+		.con-mid {
+			margin-top: -200px;
+			
+			.col-md-8 {
+				color: #0c131c;
+				padding: 60px;
+				background: #fff;
+				border-radius: 10px 0 0 10px;
+				box-shadow: 0 0 24px rgba(0,0,0,.15);
+			}
+
+			.con-list {
+				margin-bottom: 20px;
+				
+				label {
+					width: 100%;
+					color: #0c131c;
+					font-size: 13px;
+					padding-bottom: 0;
+					font-weight: 600;
+				}
+
+				input,
+				select,
+				textarea {
+					width: 100%;
+					font-size: 14px;
+					background: transparent;
+					padding: 10px;
+					border: 1px solid #e4e4e4;
+					color: #000;
+					border-radius: 5px;
+				}
+
+				.rel-in {
+					position: relative;
+					
+					button {
+						position: absolute;
+						bottom: -20px;
+						right: -20px;
+						border-radius: 50px;
+						border: 0;
+						padding: 15px;
+						width: 60px;
+						height: 60px;
+						background: #23537a;
+						color: #fff;
+						font-size: 22px;
+						box-shadow: 0 0 10px rgba(31,71,103,.7);
+						cursor: pointer;
+					}
+
+					.fa, .fab {
+						font-weight: 400;
+					}
+				}
+
+				textarea {
+					min-height: 100px;
+				}
+			}
+
+			h4 {
+				margin-bottom: 30px;
+				font-weight: 700;
+				font-size: 28px;
+			}
+
+			.col-md-4 {
+				background: #23537a;
+				padding: 60px;
+				color: #fff;
+				border-radius: 0 10px 10px 0;
+				position: relative;
+				box-shadow: 0 0 24px rgba(0,0,0,.15);
+				overflow: hidden;
+			}
+
+			.con-r .con-wrapper {
+				.cont-list-parent li {
+					display: flex;
+					position: relative;
+					margin-bottom: 30px;
+					align-items: center;
+
+					i {
+						position: absolute;
+						text-align: left;
+						width: 20px;
+						font-size: 18px;
+						top: 4px;
+					}
+
+					span {
+						padding-left: 15px;
+						line-height: 27px;
+						display: block;
+						font-size: 15px;
+
+						a {
+							color: #fff;
+						}
+					}
+
+					.fa {
+						font-weight: 900;
+					}
+				}
+
+				.social-links {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					text-align: center;
+					background: #1f4767;
+					padding: 15px;
+
+					li {
+						display: inline-block;
+						margin: 0 7px;
+						
+						a {
+							color: #fff;
+							font-size: 22px;
+						}
+
+						.fa {
+							font-family: "Font Awesome 5 Brands";
+							font-weight: 400;
+						}
+					}
+
+					li:first-child {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.col-md-8 {
+			flex: 0 0 66.66666667%;
+			max-width: 66.66666667%;
+		}
+
+		.col-md-6 {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		.col-md-4 {
+			flex: 0 0 33.33333333%;
+			max-width: 33.33333333%;
+		}
+	}
+	
+	h1:first-child,
+	h2:first-child,
+	h3:first-child,
+	h4:first-child,
+	h5:first-child,
+	h6:first-child {
+    margin-top: 0;
+	}
+
+	label {
+    display: inline-block;
+		margin-bottom: 0.5rem;
+		padding-top: 9px;
+		line-height: normal;
+	}
+
+	ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+	}
+
+	button:focus{
+		outline: 0 !important;
+	}
+
+
+
+	.facebook-icon {
+		width: 20px;
+		height: 20px;
+	}
+	.phone-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+}

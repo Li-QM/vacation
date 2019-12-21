@@ -1,0 +1,297 @@
+.kl-bottommask {
+  z-index: 1;
+
+  &--mask3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+
+    .svgmask {
+      bottom: 0;
+      margin-bottom: -14px;
+    }
+
+    .glyphicon, .svgmask {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    .glyphicon {
+      bottom: 10px;
+      display: block;
+      width: 30px;
+      text-align: center;
+      font-size: 30px;
+      opacity: 0.2;
+      height: 15px;
+      top: auto;
+      margin-left: 1px;
+    }
+
+  }
+
+  &--mask4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+
+    .svgmask {
+      position: absolute;
+      // bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+  &--mask6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+
+    .svgmask {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    .bmask-customfill {
+      -webkit-transform: translateY(-1px);
+      transform: translateY(-1px);
+    }
+  }
+
+  &--shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    z-index: 1;
+    border-bottom: 6px solid #fff;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background: -webkit-gradient(
+      50% 100%,
+      ellipse,
+      rgba(0, 0, 0, 0.5),
+      transparent 70%
+    );
+    background: radial-gradient(
+      ellipse at 50% 100%,
+      rgba(0, 0, 0, 0.3) 0,
+      transparent 70%
+    );
+    background: -webkit-radial-gradient(
+      50% 90%,
+      70% 100%,
+      rgba(0, 0, 0, 0.25) 0,
+      transparent 70%
+    );
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      border: 6px solid transparent;
+      border-top-color: #fff;
+      margin-left: -6px;
+    }
+  }
+
+  &--shadow_ud {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    z-index: 1;
+    border-bottom: 6px solid #fff;
+    background: -webkit-gradient(
+      50% 100%,
+      ellipse,
+      rgba(0, 0, 0, 0.5),
+      transparent 70%
+    );
+    background: radial-gradient(
+      ellipse at 50% 100%,
+      rgba(0, 0, 0, 0.3) 0,
+      transparent 70%
+    );
+    background: -webkit-radial-gradient(
+      50% 90%,
+      70% 100%,
+      rgba(0, 0, 0, 0.25) 0,
+      transparent 70%
+    );
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      opacity: 0.6;
+      background: -webkit-gradient(
+        50% 0,
+        ellipse,
+        rgba(0, 0, 0, 0.5),
+        transparent 70%
+      );
+      background: radial-gradient(
+        ellipse at 50% 0,
+        rgba(0, 0, 0, 0.3) 0,
+        transparent 70%
+      );
+      background: -webkit-radial-gradient(
+        50% 0,
+        70% 100%,
+        rgba(0, 0, 0, 0.25) 0,
+        transparent 70%
+      );
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -17px;
+      left: 50%;
+      border: 6px solid transparent;
+      border-top-color: #fff;
+      margin-left: -6px;
+    }
+  }
+
+  &--shadow_simple {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    z-index: 2;
+    border-bottom: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background: -webkit-gradient(
+      50% 100%,
+      ellipse,
+      rgba(0, 0, 0, 0.5),
+      transparent 70%
+    );
+    background: radial-gradient(
+      ellipse at 50% 100%,
+      rgba(0, 0, 0, 0.3) 0,
+      transparent 70%
+    );
+    background: -webkit-radial-gradient(
+      50% 90%,
+      70% 100%,
+      rgba(0, 0, 0, 0.25) 0,
+      transparent 70%
+    );
+  }
+
+  &--shadow_simple_down {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    opacity: 0.6;
+    background: -webkit-gradient(
+      50% 0,
+      ellipse,
+      rgba(0, 0, 0, 0.5),
+      transparent 70%
+    );
+    background: radial-gradient(
+      ellipse at 50% 0,
+      rgba(0, 0, 0, 0.3) 0,
+      transparent 70%
+    );
+    background: -webkit-radial-gradient(
+      50% 0,
+      70% 100%,
+      rgba(0, 0, 0, 0.25) 0,
+      transparent 70%
+    );
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .kl-bottommask--mask3 .svgmask-right,
+  .kl-bottommask--mask3 .svgmask-right + .glyphicon,
+  .kl-bottommask--mask4 .svgmask-right {
+    -webkit-transform: translateX(calc(-50%+410px));
+    transform: translateX(calc(-50%+410px));
+  }
+  .kl-bottommask--mask3 .svgmask-left,
+  .kl-bottommask--mask3 .svgmask-left + .glyphicon,
+  .kl-bottommask--mask4 .svgmask-left {
+    -webkit-transform: translateX(calc(-50% - 410px));
+    transform: translateX(calc(-50% - 410px));
+  }
+}
+
+@media (min-width: 1200px) {
+  .kl-bottommask--mask3 .svgmask-right,
+  .kl-bottommask--mask3 .svgmask-right + .glyphicon,
+  .kl-bottommask--mask4 .svgmask-right {
+    -webkit-transform: translateX(calc(-50%+510px));
+    transform: translateX(calc(-50%+510px));
+  }
+  .kl-bottommask--mask3 .svgmask-left,
+  .kl-bottommask--mask3 .svgmask-left + .glyphicon,
+  .kl-bottommask--mask4 .svgmask-left {
+    -webkit-transform: translateX(calc(-50% - 510px));
+    transform: translateX(calc(-50% - 510px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .kl-bottommask--mask3 .svgmask-right,
+  .kl-bottommask--mask3 .svgmask-right + .glyphicon,
+  .kl-bottommask--mask4 .svgmask-right {
+    -webkit-transform: translateX(calc(-50%+300px));
+    transform: translateX(calc(-50%+300px));
+  }
+  .kl-bottommask--mask3 .svgmask-left,
+  .kl-bottommask--mask3 .svgmask-left + .glyphicon,
+  .kl-bottommask--mask4 .svgmask-left {
+    -webkit-transform: translateX(calc(-50% - 300px));
+    transform: translateX(calc(-50% - 300px));
+  }
+}
+@media (max-width: 767px) {
+  .kl-bottommask--mask3 .svgmask-left,
+  .kl-bottommask--mask3 .svgmask-left + .glyphicon,
+  .kl-bottommask--mask3 .svgmask-right,
+  .kl-bottommask--mask3 .svgmask-right + .glyphicon,
+  .kl-bottommask--mask4 .svgmask-left,
+  .kl-bottommask--mask4 .svgmask-right {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.is-safari .kl-bottommask--mask3 .bmask-bgfill,
+.is-safari .kl-bottommask--mask4 .bmask-bgfill,
+.is-safari .svgmask .bmask-bgfill {
+  -webkit-filter: none;
+  filter: none;
+  -webkit-svg-shadow: 0 0 7px rgba(0, 0, 0, 0.47);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}

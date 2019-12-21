@@ -1,0 +1,31 @@
+.how-it-works {
+  padding-bottom: 70px;
+  padding-top: 70px;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+
+  .text-intro {
+    h2 {
+      color: #007bbe;
+      font-size: 36px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-family: sans-serif;
+    }
+  }
+
+  .how-it-sect {
+    h3 {
+      margin: 15px auto;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    
+    h3, p {
+      width: 100%;
+      color: #536273;
+      font-family: Source Sans Pro,sans-serif;
+    }
+  }
+}

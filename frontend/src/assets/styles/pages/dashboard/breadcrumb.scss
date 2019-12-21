@@ -1,0 +1,40 @@
+.breadcrumb-container {
+  background: #23537a;
+  color: #fff;
+  padding: 10px 15px;
+
+  .head-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .breadcrumb {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      background: transparent;
+      padding: 0;
+      color: #fff;
+      .active {
+        margin-left: 10px;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .head-inbox {
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      background-image: none;
+      border-color: #fff;
+      opacity: 0.8;
+    }
+  }
+}

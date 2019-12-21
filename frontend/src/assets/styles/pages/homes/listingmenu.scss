@@ -1,0 +1,85 @@
+.listing-menu-top {
+  padding: 20px 0 12px;
+  padding-bottom: 30px;
+
+  ul li span a {
+    background: #23537a;
+    display: inline-block;
+    color: #fff;
+    border-radius: 30px;
+    padding: 3px 12px;
+    font-size: 13px;
+  }
+
+  h2.titled {
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    font-family: "Nunito";
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-bottom: 5px;
+  }
+
+  .subnav {
+    position: relative;
+    background-color: #00293e;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .subnav[data-sticky="true"].pinned,
+  .subnav[data-transition-at] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .subnav[data-transition-at] {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .subnav.section-titles {
+    background: transparent;
+  }
+  .subnav[data-transition-at][aria-hidden="true"] {
+    position: static;
+    opacity: 1;
+  }
+  .list-layout,
+  .list-unstyled,
+  .sidenav-list,
+  .subnav-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .list-layout,
+  .sidenav-list,
+  .subnav-list {
+    margin-bottom: 0;
+  }
+  .subnav-list {
+    margin-left: -14px;
+    margin-right: -14px;
+  }
+  .subnav-list {
+    float: left;
+    width: 100%;
+  }
+  .subnav.section-titles .subnav-list {
+    margin: 0;
+  }
+
+  ul.subnav-list {
+    border-radius: 3px;
+    width: 98.8%;
+    margin-bottom: 30px !important;
+    border: 1px solid #dadada;
+  }
+}

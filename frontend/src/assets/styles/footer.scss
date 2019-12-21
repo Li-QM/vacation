@@ -1,0 +1,124 @@
+#footer {
+  width: 100%;
+  padding: 50px 0 30px;
+  background-color: #00293d;
+  color: #fff;
+
+  .h5, h5 {
+    font-size: 1.125rem;
+  }
+  
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .font_strong {
+      font-weight: bolder !important;
+
+      border-bottom: 2px solid #2e75b6;
+      font-size: 19px !important;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+    }
+
+    .link-contrast {
+      color: #fff;
+      text-decoration: none;
+    }
+    .link-contrast:focus,
+    .link-contrast:hover {
+      color: #cacccd;
+    }
+    .link-contrast:active {
+      color: #82888a;
+    }
+    .link-contrast:active,
+    .link-contrast:focus,
+    .link-contrast:hover {
+      text-decoration: none;
+      outline: 0;
+    }
+
+    .list-layout {
+      list-style: outside none none;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .link-contrast:focus,
+    .link-contrast:hover {
+      color: #cacccd;
+    }
+
+    .link-contrast:active {
+      color: #82888a;
+    }
+    .link-contrast:active,
+    .link-contrast:focus,
+    .link-contrast:hover {
+      text-decoration: none;
+      outline: 0;
+    }
+
+    .list-inline {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .list-inline li {
+      padding: 0 5px;
+      display: inline-block;
+    }
+
+    .screen-reader-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    .screen-reader-only-focusable:active,
+    .screen-reader-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+    
+    .space-top-2 {
+      margin-top: 12.5px;
+    }
+    
+    .text-muted {
+      color: #6c757d !important;
+    }
+  }
+
+  hr {
+    border-bottom-width: 0;
+    border-color: #23537a;
+    margin-left: 1px;
+    margin-right: 1px;
+    opacity: .5;
+  }
+
+  .foot-column {
+    ul {
+      li:not(:last-child) {
+        margin: 0 0 5px 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+    padding: 25px 0 0;
+  }
+}

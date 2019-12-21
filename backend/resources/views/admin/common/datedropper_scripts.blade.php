@@ -1,0 +1,1 @@
+<script type="text/javascript" src="{{asset('admin_assets/bower_components/datedropper/datedropper.min.js')}}"></script>

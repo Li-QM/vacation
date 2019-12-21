@@ -1,0 +1,1265 @@
+.room-calendar {
+  display: inline-block !important;
+  width: 100%;
+  position: relative;
+  background: #f3f6f8;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  .border-left {
+    border-left: 1px solid #dee2e6 !important;
+  }
+
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  .content_show {
+    display: inline-block;
+    width: 100%;
+    padding: 0 14px;
+    margin: 0;
+    border-bottom: none !important;
+    .content_showhead {
+      width: 100%;
+      float: left;
+      padding-left: 10px;
+      h1 {
+        line-height: 1.2;
+        font-size: 26px;
+        margin-bottom: 7px;
+        font-weight: 600;
+        color: #444;
+        font-family: "Nunito" !important;
+      }
+      p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  div#js-manage-listing-content {
+    background: #f3f6f8;
+    border: none;
+    flex: 0 0 75%;
+    max-width: 75%;
+    .common_listpage {
+      padding: 20px 10px;
+      display: inline-block;
+      width: 100%;
+      .content_right {
+        display: inline-block;
+        text-align: right;
+        float: none;
+        margin: 0 0 0 0;
+        position: relative;
+        z-index: 99;
+      }
+    }
+  }
+
+  div#js-manage-listing-content .content_right a,
+  .calendar_savebuttons a {
+    font-size: 14px !important;
+    padding: 7px 23px !important;
+  }
+
+  .wtb-sm {
+    box-shadow: inherit !important;
+    position: relative;
+    z-index: 99;
+    border: 1px solid #e7e7e7 !important;
+    border-top: 0 !important;
+    display: table;
+    width: 100%;
+
+    &::before {
+      content: "";
+      background: rgba(255, 255, 255, 0.7);
+      width: 94%;
+      height: 100px;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      position: absolute;
+      z-index: -8;
+      margin: 0 auto;
+    }
+    &::after {
+      content: "";
+      background: rgba(255, 255, 255, 0.8);
+      width: 97%;
+      height: 100px;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      margin: 0 auto;
+    }
+
+    .wtbcaption {
+      display: table-caption;
+      background: #003653 !important;
+      padding: 12px 0 !important;
+      color: white;
+      text-align: center;
+      font-family: "Nunito" !important;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      border-bottom: none;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+
+      .button-group {
+        width: 100%;
+        .prev {
+          display: inline;
+          margin-left: 30px;
+        }
+        .next {
+          display: inline;
+          margin-right: 30px;
+        }
+        button {
+          transition: all 0.2s ease-in-out;
+          display: inline-block;
+          height: 50px;
+          width: 60px;
+          cursor: pointer;
+          position: relative;
+          color: white;
+          border: none;
+          background: none;
+
+          &:hover {
+            background-color: hsla(0, 0%, 100%, 0.1);
+          }
+
+          svg {
+            width: 15px;
+            height: 15px;
+            top: 50%;
+            position: absolute;
+            margin-top: -9px;
+            fill: #fff;
+            transition: width 0.2s ease-in-out;
+            margin-left: -4px;
+          }
+        }
+      }
+
+      .clnd-date {
+        display: inline;
+        .month {
+          font-size: 2.5em;
+        }
+        .year {
+          font-size: 2em;
+        }
+      }
+    }
+
+    .wtbrow {
+      display: table-row;
+      height: 4rem;
+    }
+    .wtbcell {
+      position: relative;
+    }
+    .wtbcell.caldt {
+      vertical-align: top;
+    }
+
+    .wtbbody .wtbcell,
+    .wtbhead {
+      display: table-cell;
+      font-weight: 600;
+      width: 38px;
+      text-align: center;
+    }
+
+    .wtbheading {
+      display: table-header-group;
+      font-weight: 700;
+      width: 100%;
+      .wtbrow {
+        .wtbhead {
+          border: none;
+          background-color: #034163;
+          color: white;
+          vertical-align: middle;
+          font-size: 1em;
+          border-right: 1px solid #00527d !important;
+          border-top-width: 1px;
+        }
+      }
+    }
+
+    .wtbbody {
+      display: table-row-group;
+      position: relative;
+      .wtbcell {
+        position: relative;
+        background: #fff !important;
+        border: none;
+        border-left: 1px solid #e8e8e8;
+        border-top: 1px solid #e8e8e8;
+        height: 85px;
+        cursor: pointer;
+        padding: 0 !important;
+
+        &:first-child {
+          border-left: none;
+        }
+        &.caldt {
+          vertical-align: top;
+          &.disabled {
+            color: gray;
+            opacity: 0.5;
+          }
+          .reservation-color {
+            background-color: #007a87;
+          }
+          .blocked-color {
+            background-color: #c44b4d !important;
+          }
+          span.number {
+            font-size: 20px;
+            display: block;
+            padding-top: 5px;
+          }
+          .seasonal_name {
+            position: absolute;
+            padding: 1px;
+            color: white;
+            -webkit-text-stroke: 0px;
+            font-size: 9pt;
+            font-weight: lighter;
+          }
+          .seasonal {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            border-radius: 20px;
+            padding: 1px;
+            color: white;
+            -webkit-text-stroke: 0px;
+            font-size: 9pt;
+            font-weight: lighter;
+            top: 44%;
+          }
+          .daily-price {
+            position: absolute;
+            bottom: 8px;
+            right: 4px !important;
+            font-size: 12px !important;
+            color: #5a5a5a !important;
+            background: #f4f4f4;
+            border-radius: 30px;
+            padding: 4px 12px 2px;
+          }
+          &.range_selected {
+            background-color: #c5c8cc;
+            color: white;
+          }
+          &.align-items-center {
+            &.editable {
+              .sign {
+                display: none;
+              }
+            }
+            &.selected,
+            &.editable.range_selected {
+              background: rgba(0, 54, 83, 0.1) !important;
+              span.number {
+                color: #003653;
+                font-size: 22px !important;
+                font-weight: 800 !important;
+              }
+              .sign {
+                display: none;
+              }
+              span.daily-price {
+                background: rgba(0, 54, 83, 0.8);
+                color: #fff !important;
+              }
+            }
+            &.booked.reservation {
+              .sign {
+                background-color: #007a87;
+                height: 50%;
+                margin-top: 10px;
+                margin-bottom: 53px;
+                box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.3);
+                display: block;
+                position: relative;
+
+                .seasonal_name {
+                  width: 98%;
+                  white-space: nowrap;
+                  position: absolute;
+                  right: 0;
+                  top: 8%;
+                  left: 8px;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  text-align: left;
+                  strong {
+                    width: 98%;
+                  }
+                }
+                .seasonal {
+                  top: 44%;
+                  position: absolute;
+                }
+              }
+            }
+            &.editable.display-gradient {
+              .checkout-sign {
+                width: 50%;
+                height: 50%;
+                border-radius: 0 21px 21px 0;
+                margin-top: 10px;
+                margin-bottom: 53px;
+                box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.3);
+                margin-left: 0%;
+                position: absolute;
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                .seasonal_name {
+                  left: 0;
+                  right: unset !important;
+                  width: 98%;
+                  top: 11%;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+
+                  strong {
+                    width: 48%;
+                    overflow: hidden;
+                  }
+                }
+                .checkout-sign .seasonal {
+                  left: 0;
+                  right: unset !important;
+                  position: absolute;
+                  width: 98%;
+                  top: 41%;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+              }
+              .blocked-color {
+                .seasonal_name {
+                  top: 28% !important;
+                  text-align: center;
+                }
+              }
+            }
+            &.booked.blocked {
+              .sign {
+                background-color: #c44b4d;
+                height: 50%;
+                margin-top: 10px;
+                margin-bottom: 53px;
+                box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.3);
+                display: block;
+                position: relative;
+                .seasonal_name {
+                  position: absolute;
+                  top: 28%;
+                  left: 8px;
+                  width: 100%;
+                  text-align: center;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  right: 0;
+                  strong {
+                    width: 98%;
+                  }
+                }
+                .seasonal {
+                  display: none;
+                  right: 0;
+                  top: 44%;
+                  position: absolute;
+                }
+              }
+            }
+            &.checkin {
+              cursor: pointer !important;
+              .sign {
+                border-radius: 21px 0 0 21px;
+                width: 50%;
+                margin-left: 50%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                position: absolute !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .col-md-3.import_calander.border-left {
+    flex: 0 0 25%;
+    max-width: 25%;
+    background: #f3f6f8;
+    height: 100%;
+    .p-header-line {
+      background-color: #fff !important;
+      padding: 10px 20px 10px 15px !important;
+      margin: 0 !important;
+      border-bottom: 1px solid #f3f6f8 !important;
+      p {
+        color: #3a3a3a;
+        position: relative;
+        font-family: "Nunito" !important;
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+      }
+      .book-mark {
+        display: inline-block;
+        margin-right: 10px;
+        color: #585858;
+        font-size: 16px;
+      }
+    }
+    .p-title {
+      margin: 0px;
+      padding: 5px 0;
+    }
+
+    .rate-item {
+      &:first-child {
+        padding-top: 10px;
+      }
+      &:last-child {
+        padding-bottom: 10px;
+      }
+
+      div {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .collapse-link {
+        a {
+          border-left: none !important;
+          border-bottom: none !important;
+          background-color: #f3f6f8;
+          font-family: "Nunito" !important;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0.3px;
+          padding-left: 40px;
+          padding-bottom: 1px;
+          padding-top: 1px;
+          color: #474747 !important;
+          text-transform: capitalize;
+          text-align: left;
+          border-radius: 0px;
+          width: 100%;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+          }
+        }
+      }
+      .active.btn,
+      .btn:active {
+        background: #f2f2f2;
+      }
+      .btn:focus,
+      .btn:hover {
+        border-color: #f3f6f8 !important;
+      }
+
+      .collapse {
+        background: rgba(0, 54, 83, 0.03);
+        padding: 15px 10px;
+        margin-top: 8px;
+        margin-bottom: 13px;
+        max-height: 300px;
+        transition: all 0.3s ease-in-out;
+        &:not(.show) {
+          margin: 0;
+          padding: 0 10px;
+          max-height: 0;
+          transition: all 0.3s ease-in-out;
+        }
+        div {
+          display: flex;
+          border-bottom: none !important;
+          p {
+            margin: 0;
+            font-size: 15px;
+            padding-right: 0;
+            padding-bottom: 6px;
+          }
+        }
+      }
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        position: relative;
+        font-weight: 700;
+        transition: 0.2s;
+        letter-spacing: 0.75px;
+      }
+      .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+
+      .btn:focus,
+      .btn:hover {
+        border-color: #f3f6f8 !important;
+      }
+      .btn-warning:hover {
+        color: #212529;
+        background-color: #e0a800;
+        border-color: #d39e00;
+      }
+      .btn-warning.focus,
+      .btn-warning:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+      }
+      .btn-warning:not(:disabled):not(.disabled).active,
+      .btn-warning:not(:disabled):not(.disabled):active,
+      .inbox_
+        .inbox-wrapper
+        .in-sidebar
+        .user-listing
+        ul
+        li.btn-warning:not(:disabled):not(.disabled):hover,
+      .show > .btn-warning.dropdown-toggle {
+        color: #212529;
+        background-color: #d39e00;
+        border-color: #c69500;
+      }
+      .btn-danger {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+      }
+      .btn-danger:not(:disabled):not(.disabled).active:focus,
+      .btn-danger:not(:disabled):not(.disabled):active:focus,
+      .inbox_
+        .inbox-wrapper
+        .in-sidebar
+        .user-listing
+        ul
+        li.btn-danger:not(:disabled):not(.disabled):focus:hover,
+      .show > .btn-danger.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+      }
+      .btn-danger:not(:disabled):not(.disabled).active,
+      .btn-danger:not(:disabled):not(.disabled):active,
+      .inbox_
+        .inbox-wrapper
+        .in-sidebar
+        .user-listing
+        ul
+        li.btn-danger:not(:disabled):not(.disabled):hover,
+      .show > .btn-danger.dropdown-toggle {
+        color: #fff;
+        background-color: #bd2130;
+        border-color: #b21f2d;
+      }
+      button.btn.btn-warning {
+        background: #034163;
+        font-size: 11px;
+        color: #fff;
+        border-radius: 4px;
+        border: none;
+        margin-left: 15px;
+        margin-top: 8px;
+      }
+      button.btn.btn-danger {
+        font-size: 11px;
+        border: none;
+        border-radius: 3px;
+        margin-left: 10px;
+        margin-top: 8px;
+      }
+      .edit-mark {
+        margin-right: 3px;
+      }
+      .remove-mark {
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
+.styles_modal__gNwvD {
+  font-family: "Nunito" !important;
+  position: relative;
+  padding: 0 !important;
+  background: #ffffff;
+  background-clip: padding-box;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+  margin: auto;
+  max-width: 800px;
+
+  .h3,
+  h3 {
+    font-size: 1.575rem;
+  }
+  .h5,
+  h5 {
+    font-size: 1.125rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", helvetica, Arial, sans-serif;
+    letter-spacing: 0.33px;
+    font-weight: 700;
+  }
+  .text-danger {
+    color: red;
+  }
+  .ml-error {
+    color: #b23f42;
+    margin-bottom: 0;
+  }
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #00b0ff;
+    box-shadow: 0 2px 4px #d5edf7;
+    outline: 0 none;
+  }
+  .input-prefix,
+  .input-suffix,
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"],
+  select,
+  textarea {
+    display: block;
+    padding: 8px 10px;
+    width: 100%;
+  }
+  .input-prefix,
+  .input-suffix,
+  [type="date"],
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select,
+  textarea {
+    border: 1px solid #c4c4c4;
+    // border-radius: 5px;
+    background-color: #fff;
+    color: #565a5c;
+  }
+  [type="email"]:focus,
+  [type="number"]:focus,
+  [type="password"]:focus,
+  [type="search"]:focus,
+  [type="tel"]:focus,
+  [type="text"]:focus,
+  [type="url"]:focus,
+  input[type="checkbox"]:focus,
+  input[type="radio"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  .react-tabs {
+    .react-tabs__tab--selected {
+      background: #fff;
+      border-color: #aaa;
+      color: black;
+      border-radius: 5px 5px 0 0;
+    }
+    .tab-item {
+      display: block;
+      padding: 14px 0;
+      position: relative;
+      text-overflow: ellipsis;
+      text-align: center;
+      color: #82888a;
+      &:before {
+        background-color: #edfd00 !important;
+      }
+    }
+    .segmented-control__option:before,
+    .tab-item:before {
+      background-color: #aaa;
+      bottom: -1px;
+      content: "";
+      height: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transition: height 0.2s ease;
+    }
+    .segmented-control__option--selected:before,
+    .tab-item[aria-selected="true"]:before {
+      height: 0 !important;
+    }
+    .tabs {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 0;
+      padding: 0;
+      list-style: none;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      font-size: inherit;
+      > li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+    }
+    .tabs:not(.tabs-header) {
+      border-bottom: 1px solid #dce0e0;
+    }
+    .form-tab-header {
+      color: #fff;
+      background: #034163 !important;
+      padding: 10px 20px 0px 20px;
+      margin: 0;
+      h3.ml-0 {
+        margin-top: 0;
+      }
+      li {
+        border-radius: 0px !important;
+        margin: 0 !important;
+        padding: 14px 25px 14px 25px !important;
+        position: relative;
+        line-height: 1.2;
+        &:nth-child(2) {
+          border-top-left-radius: 30px !important;
+        }
+        &:last-child {
+          border-top-right-radius: 30px !important;
+        }
+      }
+      .react-tabs__tab--selected {
+        color: white !important;
+        background: #4caf50 !important;
+        &::after {
+          content: "";
+          border-left: 13px solid transparent;
+          border-right: 13px solid transparent;
+          border-top: 13px solid #01314c;
+          position: absolute;
+          left: 39%;
+          bottom: -13px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .react-tabs__tab-panel {
+      display: block;
+      &.react-tabs__tab-panel--selected {
+        .seasonal_price {
+          display: inline-block;
+          width: 100%;
+          padding: 20px;
+          #reservation_form_t {
+            padding-top: 15px;
+            .ses_time:nth-child(2) {
+              display: inline-block;
+            }
+            .ses_time:nth-child(4) {
+              display: inline-block;
+            }
+          }
+          .ses_time {
+            display: inline-flex;
+            width: 100%;
+            margin-bottom: 15px;
+            &.datepicker-wrapper {
+              padding: 0 15px !important;
+            }
+
+            .react-datepicker-wrapper {
+              display: block !important;
+              position: relative;
+              width: 100%;
+              padding: 0;
+              border: 0;
+            }
+            .ses_pop {
+              &.row {
+                flex: 0 0 52% !important;
+                max-width: 52% !important;
+                margin-right: 15px !important;
+              }
+            }
+            label {
+              padding-top: 0;
+              padding-bottom: 0;
+              font-weight: 800 !important;
+              color: #585858 !important;
+              display: block;
+              width: 100%;
+              margin-bottom: 3px !important;
+            }
+            .ses_pop1 {
+              &.row {
+                flex: 0 0 52% !important;
+                max-width: 52% !important;
+              }
+              #reservation_note_t {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                height: 175px;
+              }
+            }
+            span {
+              float: left;
+              padding: 4px 11px;
+            }
+            .pricelist {
+              display: table;
+              width: 100%;
+              .price_doller {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 0 10px;
+                width: auto;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-right: 0;
+                background: #034163 !important;
+                border-color: #034163 !important;
+                color: #fff !important;
+                border-top-left-radius: 2px !important;
+                border-bottom-left-radius: 2px !important;
+              }
+            }
+            input {
+              border: 1px solid #dadada !important;
+              border-radius: 2px;
+              font-size: 14px;
+              padding: 7px 14px !important;
+              height: 43px !important;
+            }
+          }
+        }
+      }
+    }
+    button#save_reservation_t,
+    button#save_season_t,
+    button#save_unavailable_t {
+      background: #034163 !important;
+      color: #fff !important;
+      border: none !important;
+      font-size: 14px !important;
+      padding: 8px 30px !important;
+      border-radius: 3px;
+      box-shadow: 0px 3px 7px 0px rgba(155, 155, 155, 0.5);
+      cursor: pointer;
+    }
+    h3.ml-0 {
+      font-family: "Nunito" !important;
+      padding-top: 6px;
+      margin-bottom: 1rem;
+    }
+  }
+  .styles_closeButton__20ID4 {
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    border: none;
+    padding: 0;
+    background-color: #fff !important;
+    display: flex;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    .styles_closeButton__20ID4 svg.styles_closeIcon__1QwbI {
+      margin: 0 auto;
+    }
+  }
+
+  .import-calendar,
+  .export-calendar {
+    &.panel {
+      border: none;
+      background-color: #fff;
+      border-radius: 0;
+      .panel-body,
+      .panel-footer,
+      .panel-header,
+      ol.panel-body > li,
+      ul.panel-body > li {
+        position: relative;
+        margin: 0;
+        padding: 20px;
+      }
+      .panel-body:first-child,
+      .panel-footer:first-child,
+      .panel-header:first-child,
+      ol.panel-body > li:first-child,
+      ul.panel-body > li:first-child {
+        border-top: 0;
+      }
+      .panel-header {
+        color: #565a5c;
+        font-size: 16px;
+        font-weight: 700;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #dce0e0;
+        background: #034163 !important;
+        span {
+          font-size: 1.575rem;
+          color: #fff;
+        }
+      }
+      .panel-body {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        & > :first-child {
+          margin-top: 0;
+          font-size: 15px;
+        }
+        & > :last-child {
+          margin-bottom: 0;
+        }
+        .content {
+          display: inline-flex;
+          label {
+            width: 50%;
+            padding: 0 16px 0 0;
+          }
+        }
+      }
+      form#feed_import_form {
+        & > label {
+          width: 46%;
+          margin-right: 23px;
+        }
+        p.label {
+          padding-top: 0;
+          padding-bottom: 0;
+          font-weight: 800 !important;
+          color: #585858 !important;
+          display: block;
+          width: 100%;
+          margin-bottom: 3px !important;
+        }
+        & > label + div {
+          margin: 0 !important;
+        }
+      }
+    }
+    .alert-close,
+    .modal-close,
+    .panel-close {
+      cursor: pointer;
+      font-size: 2em;
+      line-height: 0.7;
+      vertical-align: middle;
+      font-style: normal;
+      font-weight: 400;
+      color: #cacccd;
+    }
+    .modal-close {
+      padding: 8px;
+      margin-right: -8px;
+      margin-top: -8px;
+    }
+    button#feed_import_btn {
+      background: #034163 !important;
+      color: #fff !important;
+      border: none !important;
+      font-size: 14px !important;
+      padding: 11px 30px !important;
+      border-radius: 3px;
+      box-shadow: 0px 3px 7px 0px rgba(155, 155, 155, 0.5);
+      margin-bottom: 6px;
+    }
+  }
+
+  .import-calendar {
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .content {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        label {
+          p {
+            margin-top: 0;
+            span {
+              font-size: 15px;
+              font-weight: 800;
+            }
+          }
+        }
+        @media (max-width: 767px) {
+          display: inline;
+          flex-wrap: wrap !important;
+          label {
+            width: 100% !important;
+            padding: 0 !important;
+          }
+        }
+      }
+      button#feed_import_btn {
+        span {
+          font-family: 'Nunito';
+          font-weight: 700;
+          padding: 11px 30px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .full-content .manage-listing-content-wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .full-content .manage-listing-content-wrapper {
+    display: inline-block;
+  }
+  div#js-manage-listing-content {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .import_calander.border-left {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px;
+    margin-top: 30px;
+    .row {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.styles_modal__gNwvD.styles_modalCenter__L9F2w {
+  font-family: "Nunito" !important;
+  font-size: 18px;
+  font-weight: 700;
+  .h4,
+  h4 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  .btn:focus,
+  .btn:hover {
+    outline: rgba(0, 0, 0, 0.3) auto 2px;
+  }
+  .btn {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 2px;
+    letter-spacing: 0.75px;
+    font-size: 13px;
+    position: relative;
+    font-weight: 700;
+    font-family: "Nunito";
+  }
+  .btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn-danger,
+  .btn-default,
+  .btn-fullblack,
+  .btn-fullcolor,
+  .btn-fullwhite,
+  .btn-info,
+  .btn-link,
+  .btn-primary,
+  .btn-success,
+  .btn-warning {
+    text-shadow: none;
+    padding: 10px 20px;
+    line-height: 1.6;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-style: solid;
+    border-radius: 3px;
+    transition: background-color 0.15s ease-out;
+  }
+  .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  button.btn.btn-danger {
+    font-size: 11px;
+    border: none;
+    border-radius: 3px;
+  }
+  .styles_closeButton__20ID4 {
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    border: none;
+    padding: 0;
+    background-color: #fff !important;
+    display: flex;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .modal-header {
+    &.reservation-remove {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 1rem;
+      border-bottom: 1px solid #e9ecef;
+      background-color: #034163;
+      padding: 10px 30px 0 20px;
+    }
+  }
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    &.reservation-remove {
+      .spinner-border {
+        margin-top: 20px;
+      }
+    }
+  }
+  .modal-footer {
+    &.reservation-remove {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem;
+      border-top: 1px solid #e9ecef;
+      .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 13px !important;
+      }
+      .btn-cancel {
+        margin: 0 10px;
+      }
+      .btn-remove {
+        margin: 0;
+      }
+    }
+  }
+  .styles_closeButton__20ID4 svg.styles_closeIcon__1QwbI {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 600px) {
+    .modal-header {
+      min-width: 500px;
+    }
+  }
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.spinner-border {
+  margin: 0 20px 0 20px;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: text-bottom;
+  border: 0.15em solid;
+  border-right: 0.15em solid transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+

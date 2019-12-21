@@ -1,0 +1,92 @@
+.signin-modal {
+  .bor-none {
+    border: none !important;
+  }
+  
+  .rm_lg {
+    color: #767676;
+    display: inline-block;
+    padding: 0 0 20px;
+    cursor: pointer;
+  }
+  .field_ico {
+		position: relative;
+		margin: 0 !important;
+		i {
+			position: absolute;
+			right: 14px;
+			top: 13px;
+			font-size: 19px;
+			color: #484848;
+		}
+		input {
+			height: 62px !important;
+			background: transparent !important;
+			border-radius: 2px !important;
+			margin: 0;
+			padding: 15px !important;
+			border: 2px solid #e8e8e8;
+		}
+		&.row-space-2 input{
+			border-bottom: none !important;
+		}
+		&.row-space-3 input{
+			margin-bottom: 18.75px;
+		}
+	}
+	
+	#user-login-btn_modal {
+    background: #f54141 !important;
+    padding: 12px 0 !important;
+    box-shadow: 0px 13px 16px 0px rgba(59, 89, 152, 0.3);
+    border: none !important;
+    border-radius: 3px !important;
+    height: 54px !important;
+	}
+  
+  .clearfix.row-space-3 {
+    display: flex;
+    flex-wrap: wrap;
+    .remember-me {
+      float: left;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-right: 50px;
+      #remember_me2_modal {
+        height: 20px !important;
+        width: 20px !important;
+        padding: 0 !important;
+        border-radius: 2px !important;
+        border: 2px solid #e8e8e8;
+      }
+    }
+  
+    .forgot-password {
+      float: right;
+      margin-left: auto;
+      &.h5 {
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+      }
+    }
+    @media (max-width: 450px) {
+      margin-bottom: -10px;
+      .forgot-password {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .user-login-btn.btn_new {
+    width: 100% !important;
+    float: none !important;
+    background-color: #ff5a5f !important;
+    border: none;
+    position: inherit;
+    padding: 10px !important;
+  }
+}

@@ -1,0 +1,115 @@
+.row-space-top-6.row-space-16.text-wrap {
+	margin-top: 130px;
+}
+.col-md-6.aboutus__staff-section {
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+	flex: 0 0 47%;
+	max-width: 47%;
+	margin: 0 auto 30px !important;
+	padding: 30px 20px 20px 20px !important;
+	position: relative !important;
+	overflow: hidden;
+}
+#page_content .aboutus__staff-section h1 {
+	font-size: 21px;
+	text-align: center;
+	color:#23537a;
+	margin-top: 35px !important;
+	margin-bottom: 5px !important;
+}
+#page_content .aboutus__staff-section h1 {
+	font-size: 21px !important;
+	text-align: center;
+	color: #23537a !important;
+}
+#page_content .aboutus__staff-img {
+	height: 215px !important;
+	width: 215px !important;
+	border-radius: 50% !important;
+	margin-top: 12px !important;
+	box-shadow: 0px 0px 33px 0px rgba(25, 83, 196, 0.3);
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+#page_content .aboutus__staff-section h2 {
+	font-size: 18px !important;
+	padding-bottom: 5px !important;
+	font-family: "Nunito" !important;
+	text-align: center;
+	margin-top: 0;
+}
+#page_content .aboutus__staff-section p {
+	font-size: 14px !important;
+	line-height: 1.6;
+	text-align: center;
+	font-family: "Nunito" !important;
+}
+#page_content .aboutus__staff-section::after {
+	content: "";
+	background: #23537a;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	right: -35px;
+	top: -35px;
+	border-radius: 50%;
+	box-shadow: -5px 5px 0px 0px rgba(35, 83, 122, 0.2);
+}
+.col-md-6.aboutus__staff-section::before {
+	content: "";
+	background: #818384;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left: -35px;
+	bottom: -35px;
+	border-radius: 50%;
+	box-shadow: 5px -5px 0px 0px hsla(200, 1%, 51%, 0.1);
+}
+.row-space-top-6.row-space-16.text-wrap h1 {
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin-bottom: 40px !important;
+	margin-top: 0 !important;
+	font-family: "Nunito" !important;
+	font-weight: 800 !important;
+}
+
+@media only screen and (max-width:767px){
+	.col-md-6.aboutus__staff-section {
+			flex: 0 0 100%;
+			max-width: 100%;
+	}
+	.row-space-top-6.row-space-16.text-wrap h1 {
+			font-size: 19px !important;
+			line-height: 27px;
+	}
+	#page_content .aboutus__staff-img {
+			height: 165px !important;
+			width: 165px !important;
+	}
+	#page_content .aboutus__staff-section h1 {
+			margin-top: 20px !important;
+	}
+	#page_content .aboutus__staff-section h2 {
+			padding-bottom: 0px !important;
+	}
+	#page_content .aboutus__staff-section::after {
+			content: "";
+			height: 100px;
+			width: 100px;
+	}
+	.col-md-6.aboutus__staff-section::before {
+			content: "";
+			left: -50px;
+			bottom: -50px;
+	}
+	main#site-content p#page_content .col-md-6.aboutus__staff-section:nth-child(even) img {
+			margin-top: 0 !important;
+			position: relative;
+			top: 0 !important;
+			margin-top: 12px !important;
+	}
+}

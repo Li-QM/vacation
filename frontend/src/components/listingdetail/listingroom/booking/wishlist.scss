@@ -1,0 +1,312 @@
+#wishlist-dialog {
+  .text-lead {
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+  }
+  .space-4 {
+    margin-bottom: 25px;
+  }
+  .h3, h3 {
+    font-size: 1.575rem;
+  }
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+  }
+  figure {
+    margin: 0 0 1rem;
+  }
+  .va-container-h {
+    width: 100%;
+  }
+  .va-container-v {
+    height: 100%;
+  }
+  .va-container {
+    display: table;
+    position: relative;
+  }
+  .va-middle {
+    vertical-align: middle;
+  }
+  .va-bottom,
+  .va-middle,
+  .va-top {
+    display: table-cell;
+  }
+  .panel-header {
+    color: #565a5c;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dce0e0;
+  }
+  .panel-body,
+  .panel-footer,
+  .panel-header,
+  ol.panel-body>li,
+  ul.panel-body>li {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid #dce0e0;
+  }
+  .panel-body+.panel-body,
+  .panel-footer+.panel-body,
+  .panel-header+.panel-body,
+  ol.panel-body>li+.panel-body,
+  ul.panel-body>li+.panel-body {
+    border-top: none !important;
+  }
+  .icon-gray,
+  .text-gray {
+    color: #82888a;
+  }
+  .icon-dark-gray,
+  .text-dark-gray {
+    color: #3c3f40;
+  }
+  .icon-beach,
+  .text-beach {
+    color: #008489;
+  }
+  .panel-body> :last-child {
+    margin-bottom: 0;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button,
+  input {
+    overflow: visible;
+  }
+  .btn-contrast {
+    border-color: #565a5c #565a5c #383b3c;
+    background-color: #565a5c;
+    color: #fff;
+  }
+  .btn {
+    padding: 8px 10px;
+    font-size: 16px;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+    border: 1px solid;
+    font-weight: 400;
+    line-height: 1.43;
+    cursor: pointer;
+  }
+  .btn:focus,
+  .btn:hover {
+    text-decoration: none;
+  }
+  .btn-contrast:focus,
+  .btn-contrast:hover {
+    border-color: #676c6e #676c6e #444749;
+    background-color: #676c6e;
+    color: #fff;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: "Nunito";
+  }
+  .panel-body:first-child,
+  .panel-footer:first-child,
+  .panel-header:first-child,
+  ol.panel-body>li:first-child,
+  ul.panel-body>li:first-child {
+    border: 0;
+  }
+  .input-prefix,
+  .input-suffix,
+  [type=email],
+  [type=number],
+  [type=password],
+  [type=search],
+  [type=tel],
+  [type=text],
+  [type=url],
+  select,
+  textarea {
+    display: block;
+    padding: 8px 10px;
+    width: 100%;
+  }
+  [type=date],
+  [type=email],
+  [type=number],
+  [type=password],
+  [type=search],
+  [type=tel],
+  [type=text],
+  [type=url],
+  input[type=checkbox],
+  input[type=radio],
+  select,
+  textarea {
+    transition: border-color .2s;
+  }
+  .input-prefix,
+  .input-suffix,
+  [type=date],
+  [type=email],
+  [type=number],
+  [type=password],
+  [type=search],
+  [type=tel],
+  [type=text],
+  [type=url],
+  input[type=checkbox],
+  input[type=radio],
+  select,
+  textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #565a5c;
+  }
+  [type=email]:focus,
+  [type=number]:focus,
+  [type=password]:focus,
+  [type=search]:focus,
+  [type=tel]:focus,
+  [type=text]:focus,
+  [type=url]:focus,
+  input[type=checkbox]:focus,
+  input[type=radio]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+  }
+  .focus[type=email],
+  .focus[type=number],
+  .focus[type=password],
+  .focus[type=search],
+  .focus[type=tel],
+  .focus[type=text],
+  .focus[type=url],
+  [type=email]:focus,
+  [type=number]:focus,
+  [type=password]:focus,
+  [type=search]:focus,
+  [type=tel]:focus,
+  [type=text]:focus,
+  [type=url]:focus,
+  input.focus[type=checkbox],
+  input.focus[type=radio],
+  input[type=checkbox]:focus,
+  input[type=radio]:focus,
+  select.focus,
+  select:focus,
+  textarea.focus,
+  textarea:focus {
+    border-color: #aaa;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    box-shadow: 0 2px 4px #d5edf7;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .panel-body+.panel-body:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    height: 1px;
+    left: 20px;
+    right: 20px;
+    border-color: #dce0e0 hsla(180, 6%, 87%, 0.5) hsla(180, 6%, 87%, 0.5);
+    border-top: 1px solid hsla(180, 6%, 87%, 0.5);
+  }
+  .panel-body> :last-child {
+    margin-bottom: 0;
+  }
+  .panel-body> :first-child {
+    margin-top: 0;
+  }
+  .left_form {
+    background-color: #007bbe;
+    min-height: 460px;
+    color: #fff;
+    text-align: center;
+    padding: 70px 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    h2 {
+      font-weight: 300;
+      color: #fff;
+      padding: 0;
+      font-size: 36px;
+      margin: 15px 0;
+    }
+    p {
+      font-size: 16px;
+    }
+    a#more_info {
+      width: 26px;
+      height: 26px;
+      color: #fff;
+      position: absolute;
+      line-height: 1;
+      left: 15px;
+      bottom: 15px;
+      z-index: 2;
+      font-size: 26px;
+    }
+    .icon {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+  .wl-modal-footer__form {
+    strong {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+    }
+    input {
+      font-size: 16px;
+    }
+    #wish_list_btn {
+      font-size: 14.4px;
+    }
+  }
+  .wl-modal-wishlists {
+    .wl-modal__header {
+      border-bottom: 1px solid #dce0e0;
+      font-weight: 700;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+.styles_closeButton__20ID4 {
+  &.wish-listing {
+    background-color: transparent !important;
+    margin-top: 13px;
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: #fff;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+#summary {
+  margin-top: 30px;
+  background: none !important;
+  border: none;
+  padding: 0;
+
+  a.link-reset.text-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+  }
+
+  .row-space-4.row-space-top-4.summary-component {
+    margin-top: 0px;
+    .room_admin.row
+      .col-md-3.space-sm-4.text-center.space-sm-2.lang-chang-label {
+      flex: 0 0 18%;
+      max-width: 18%;
+    }
+  }
+  .media-photo-badge {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  .media-photo-badge a.link-reset.text-wrap {
+    font-weight: 700;
+    font-family: "Nunito";
+    margin-top: 6px;
+  }
+  .star-rating {
+    display: inline-block;
+    position: relative;
+  }
+  .star-rating-wrapper .star-rating {
+    display: inline-block;
+    position: relative;
+    left: -6px;
+  }
+  .star-rating-wrapper .star-container {
+    padding: 0px 0 0 4px !important;
+  }
+  .star-rating-wrapper svg.widget-svg {
+    width: 19px !important;
+  }
+  .star-rating-wrapper span small span:nth-child(2) {
+    position: relative;
+    left: -1px;
+  }
+}

@@ -1,0 +1,41 @@
+.dashboard {
+	.form-group {
+    margin-bottom: 1rem;
+	}
+	.form-group label {
+    font-weight: 400;
+    color: #222;
+	}
+	label {
+    display: inline-block;
+		margin-bottom: .5rem;
+		padding-top: 9px;
+		padding-bottom: 8px;
+		line-height: normal;
+	}
+	.input-prefix, .input-suffix, [type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], select, textarea {
+    display: block;
+    padding: 8px 10px;
+		width: 100%;
+		border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #565a5c;
+	}
+	.btn-primary.btn, .btn-primary.btn:active, .btn-primary.btn:focus, .btn-primary.btn:hover {
+    border-color: #0190e2;
+    color: #fff;
+	}
+
+	.btn-primary.btn {
+			background-color: #0190e2;
+	}
+	.btn-primary:hover {
+    color: #fff;
+    background-color: #1a3f5c;
+    border-color: #183852;
+	}
+	.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(35,83,122,.5);
+	}
+}

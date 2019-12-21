@@ -1,0 +1,455 @@
+#book_it {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  .panel {
+    border: 1px solid #dedede;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .panel.book-it-panel,
+  .panel.wishlist-panel {
+    border: none !important;
+  }
+  .panel.wishlist-panel {
+    border-top: none;
+  }
+  .panel-light {
+    background-color: #fff;
+  }
+  .panel-body {
+    position: relative;
+  }
+  .panel-body,
+  .panel-footer,
+  .panel-header,
+  ol.panel-body > li,
+  ul.panel-body > li {
+    position: relative;
+    margin: 0;
+    padding: 8px 30px 0 30px !important;
+    border-top: 1px solid #dce0e0;
+  }
+  .panel-body {
+    position: relative;
+  }
+  .panel-light {
+    background-color: #fff;
+  }
+  .panel_light {
+    padding: 8px 30px 0 30px !important;
+  }
+  .panel-body:first-child,
+  .panel-footer:first-child,
+  .panel-header:first-child,
+  ol.panel-body > li:first-child,
+  ul.panel-body > li:first-child {
+    border-top: 0;
+  }
+  .panel-body > :first-child {
+    margin-top: 0;
+  }
+  .panel-body > :last-child {
+    margin-bottom: 0;
+  }
+
+  .form-fields .row.row-condensed.space-1,
+  .form-fields .row.row-condensed.space-1 .row {
+    display: block;
+  }
+  .form-fields .row.row-condensed.space-1 .row {
+    margin: 0;
+  }
+  .form-fields .row.row-condensed .col-sm-6 {
+    margin-bottom: 12px;
+    padding-right: 9px;
+  }
+  .form-fields .col-md-9.col-sm-12.lang-chang-label,
+  .form-fields .row.row-condensed.space-1 .row .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .form-fields label {
+    font-weight: 700;
+    font-family: "Nunito";
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .form-fields input {
+    border: 1px solid #c4c4c4;
+    border-radius: 0px;
+    background-color: #fff;
+    color: #565a5c;
+    padding: 9px;
+  }
+  .form-fields .row.row-condensed.space-1 .col-md-3.col-sm-12.book_select {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  button,
+  select {
+    text-transform: none;
+  }
+  .select {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .select select {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .select-block {
+    display: block;
+    width: 100%;
+  }
+  .select select {
+    padding-right: 22px;
+  }
+  .book-it-panel .select select {
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .icon {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn {
+    padding: 7px 21px;
+    font-size: 14px;
+  }
+
+  .btn-danger,
+  .btn-default,
+  .btn-fullblack,
+  .btn-fullcolor,
+  .btn-fullwhite,
+  .btn-info,
+  .btn-link,
+  .btn-primary,
+  .btn-success,
+  .btn-warning {
+    text-shadow: none;
+    padding: 10px 20px;
+    line-height: 1.6;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-style: solid;
+    border-radius: 3px;
+    transition: background-color 0.15s ease-out;
+  }
+  [type="reset"],
+  [type="submit"],
+  button,
+  html [type="button"] {
+    -webkit-appearance: button;
+  }
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  button#request_book_btn {
+    background: #23537a;
+    color: #fff;
+    padding: 11px 28px;
+    border-radius: 0px;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .btn-primary.btn,
+  .btn-primary.btn:active,
+  .btn-primary.btn:focus,
+  .btn-primary.btn:hover {
+    border-color: #0190e2;
+    color: #fff;
+  }
+  .btn-danger,
+  .btn-default,
+  .btn-fullblack,
+  .btn-fullcolor,
+  .btn-fullwhite,
+  .btn-info,
+  .btn-link,
+  .btn-primary,
+  .btn-success,
+  .btn-warning {
+    text-shadow: none;
+    padding: 10px 20px;
+    line-height: 1.6;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-style: solid;
+    border-radius: 3px;
+    transition: background-color 0.15s ease-out;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #23537a;
+    border-color: #23537a;
+  }
+  .btn-block {
+    white-space: normal;
+  }
+
+  .btn-large {
+    padding: 9px 27px;
+    font-size: 14.4px;
+    font-weight: 400;
+  }
+  .btn-large .icon:first-child {
+    margin-right: 4px;
+  }
+  .btn .icon:first-child {
+    margin-right: 3px;
+  }
+  .js-book-it-btn {
+    border-bottom: 3px solid #1062af !important;
+  }
+  .rich-toggle.wish_list_button.not_saved button.btn.btn-block.btn-large {
+    border: 2px solid #23537a !important;
+    color: #23537a;
+    padding: 8px 28px;
+    border-radius: 0px;
+    box-shadow: none !important;
+  }
+
+  .share-title {
+    margin-right: 8px;
+  }
+  .share-btn,
+  .share-title {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .d-inline-block {
+    display: inline-block !important;
+    border-radius: 61px;
+    flex: auto;
+    padding: 2px;
+    position: relative;
+    width: 97px; 
+    cursor: pointer;
+    margin: 0 10px 10px 10px;
+    
+    div {
+      width: 93px !important;
+      position: relative;
+      z-index: 9;
+      outline: none;
+    }
+    svg {
+      overflow: hidden;
+      vertical-align: middle;
+      position: relative;
+      left: -30px;
+    }
+  }
+
+  .wishlist-panel .icon-heart-alt {
+    display: inline-block;
+  }
+
+  .social-share-widget.space-top-3.p3-share-widget
+    span.share-title.text-center {
+    display: none;
+  }
+  .social-share-widget.space-top-3.p3-share-widget .text-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .social-share-widget.space-top-3.p3-share-widget
+    .text-center
+    > div:first-child::after {
+    content: "Facebook";
+  }
+  .social-share-widget.space-top-3.p3-share-widget
+    .text-center
+    > div:first-child {
+    border: 1px solid #3b5998;
+    color: #3b5998;
+  }
+
+  .social-share-widget.space-top-3.p3-share-widget
+    .text-center
+    > div:nth-child(2)::after {
+    content: "Twitter";
+  }
+  .social-share-widget.space-top-3.p3-share-widget
+    .text-center
+    > div:nth-child(2) {
+    border: 1px solid#00aced;
+    color: #00aced;
+  }
+
+  .social-share-widget.space-top-3.p3-share-widget .text-center > div::after {
+    font-size: 13px;
+    position: absolute;
+    right: 7px;
+    top: 10px;
+  }
+
+  .DateRangePicker {
+    position: absolute;
+    background: white;
+    z-index: 100;
+    top: 87px;
+    border: solid 1px gray;
+  }
+  .DateRangePicker__Month {
+    margin: 0px !important;
+  }
+  .datepickerOverlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .row-condensed .space-1-sm {
+    padding: 0 !important;
+  }
+
+  .hasDatepicker {
+    height: 40px;
+  }
+
+  #number_of_guests {
+    height: 40px;
+    border-radius: 0px;
+    width: 100%;
+  }
+  .col-lg-4.col-sm-12 form .panel-body,
+  .col-lg-4.col-sm-12 form .panel-footer,
+  .col-lg-4.col-sm-12 form .panel-header,
+  .col-lg-4.col-sm-12 form ol.panel-body > li,
+  .col-lg-4.col-sm-12 form ul.panel-body > li {
+    padding: 8px 30px 0px 30px;
+  }
+
+  #pricing {
+    top: 0 !important;
+  }
+  #pricing {
+    position: relative !important;
+  }
+  .social-share-widget.space-top-3.p3-share-widget
+    .text-center
+    > div:first-child {
+    border: 1px solid #3b5998;
+    color: #3b5998;
+  }
+  .spin-wrapper .uil-spin-css > div > div {
+    background: #23537a !important;
+  }
+
+  .icon-beach,
+  .text-beach {
+    color: #008489;
+  }
+
+  .book-it__subtotal {
+    .table {
+      width: 100%;
+      margin-bottom: 1rem;
+      background-color: transparent;
+      font-size: 14px !important;
+      border-collapse: separate;
+      color: rgba(85, 85, 85, 0.81);
+      max-width: 100%;
+      border-spacing: 0;
+    }
+    .table-bordered,
+    .table-bordered td,
+    .table-bordered th {
+      border: 1px solid #dee2e6;
+    }
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tbody > tr > th,
+    .table-bordered > tfoot > tr > td,
+    .table-bordered > tfoot > tr > th,
+    .table-bordered > thead > tr > td,
+    .table-bordered > thead > tr > th {
+      border-left: 1px solid #dce0e0;
+    }
+    .table > tbody > tr > td,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > td,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > thead > tr > th {
+      padding: 8px;
+      border-top: 1px solid #dce0e0;
+      vertical-align: top;
+    }
+    .table-bordered {
+      border-radius: 2px;
+    }
+  }
+  .book-it-panel {
+    .DateRangePicker__Legend {
+      color: #52575e;
+      font-size: 14px;
+      line-height: 16px;
+      list-style-type: none;
+      margin: 20px 0;
+      padding: 0;
+    }
+  }
+  .wishlist-panel {
+    #contact_wrapper {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

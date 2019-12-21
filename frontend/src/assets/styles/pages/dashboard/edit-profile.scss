@@ -1,0 +1,447 @@
+.boby__edit-profile {
+  .edit-profile_ {
+    .text-right {
+      text-align: left !important;
+    }
+    .text-danger {
+      color: #dc3545 !important;
+    }
+    .text-muted {
+      color: #6c757d !important;
+    }
+
+    .ml-auto,
+    .mx-auto {
+      margin-left: auto !important;
+    }
+    .label {
+      font-weight: 700;
+    }
+
+    .row {
+      margin-right: 15px !important;
+      margin-left: 15px !important;
+    }
+    .row-condensed {
+      padding-left: 6.25px;
+      padding-right: 6.25px;
+    }
+    .row-space-top-1 {
+      margin-top: 6.25px;
+    }
+    .text-muted.row-space-top-1 {
+      display: inline-block;
+      width: 100%;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .row.row-condensed.space-4 {
+      margin-left: 0 !important;
+      margin-bottom: 15px !important;
+    }
+
+    .mr-1,
+    .mx-1 {
+      margin-right: 0.25rem !important;
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      padding-top: 9px;
+      padding-bottom: 8px;
+    }
+    label.text-right.col-sm-3.lang-chang-label {
+      font-family: "Nunito" !important;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+    .label-warning {
+      color: #ffb400;
+    }
+    .label-danger {
+      color: #b23f42;
+    }
+
+    .panel.top-home {
+      padding: 0px;
+    }
+
+    .language_select {
+      margin-top: 9px;
+      float: left;
+    }
+    .react-tel-input input {
+      color: black !important;
+    }
+
+    .focus {
+      background: #ededed;
+      color: #000;
+    }
+    .focus {
+      border-radius: 0 !important;
+    }
+    .focus:focus {
+      border-color: rgba(82, 168, 236, 0.8) !important;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+        0 0 8px rgba(82, 168, 236, 0.6) !important;
+      outline: 0 none !important;
+    }
+    [type="date"],
+    [type="email"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="url"],
+    input[type="checkbox"],
+    input[type="radio"],
+    select,
+    textarea {
+      transition: border-color 0.2s;
+    }
+    .input-prefix,
+    .input-suffix,
+    [type="email"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="url"],
+    select,
+    textarea {
+      display: block;
+      padding: 8px 10px;
+      width: 100%;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #00b0ff;
+      box-shadow: 0 2px 4px #d5edf7;
+      outline: 0 none;
+    }
+    .button:focus,
+    button:focus,
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 0;
+    }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    .focus[type="email"],
+    .focus[type="number"],
+    .focus[type="password"],
+    .focus[type="search"],
+    .focus[type="tel"],
+    .focus[type="text"],
+    .focus[type="url"],
+    [type="email"]:focus,
+    [type="number"]:focus,
+    [type="password"]:focus,
+    [type="search"]:focus,
+    [type="tel"]:focus,
+    [type="text"]:focus,
+    [type="url"]:focus,
+    input.focus[type="checkbox"],
+    input.focus[type="radio"],
+    input[type="checkbox"]:focus,
+    input[type="radio"]:focus,
+    select.focus,
+    select:focus,
+    textarea.focus,
+    textarea:focus {
+      border-color: #aaa;
+    }
+    textarea {
+      overflow: auto;
+      resize: vertical;
+    }
+    form textarea {
+      min-height: 150px;
+    }
+    .select:after {
+      content: "+";
+      font-family: makent !important;
+      position: absolute;
+      pointer-events: none;
+      color: #82888a;
+      top: 15px;
+      padding-top: 0.7em;
+      line-height: 1;
+      right: 2px;
+      width: 3em;
+      font-size: 10px;
+      text-align: center;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      background: white;
+    }
+    input,
+    select,
+    textarea {
+      border: 1px solid #dadada !important;
+      border-radius: 2px;
+      float: left;
+      font-size: 14px;
+      padding: 7px 14px !important;
+      height: 43px;
+      margin: 0 !important;
+      background: transparent !important;
+      font-family: "Nunito" !important;
+      line-height: 21px;
+      letter-spacing: normal;
+      font-weight: 400;
+      font-family: "Nunito";
+    }
+    .select {
+      position: relative;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+    .btn {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 1px solid transparent;
+      padding: 0.375rem 0.75rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      border-radius: 0.25rem;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .btn-primary {
+      color: #fff;
+      background-color: #23537a;
+      border-color: #23537a;
+    }
+    [type="reset"],
+    [type="submit"],
+    button,
+    html [type="button"] {
+      -webkit-appearance: button;
+    }
+    .btn-primary.btn,
+    .btn-primary.btn:active,
+    .btn-primary.btn:focus,
+    .btn-primary.btn:hover {
+      border-color: #0190e2;
+      color: #fff;
+    }
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .inbox_
+      .inbox-wrapper
+      .in-sidebar
+      .user-listing
+      ul
+      li.btn-primary:not(:disabled):not(.disabled):hover,
+    .show > .btn-primary.dropdown-toggle {
+      color: #fff;
+      background-color: #183852;
+      border-color: #153148;
+    }
+    button.btn.btn-primary {
+      font-size: 14px !important;
+      padding: 9px 35px 7px 35px !important;
+      background: #034163 !important;
+      color: #fff !important;
+      box-shadow: 0px 2px 11px 0px #ccc;
+    }
+    .btn-primary.btn,
+    .btn-primary.btn:active,
+    .btn-primary.btn:focus,
+    .btn-primary.btn:hover {
+      border-color: #0190e2;
+      color: #fff;
+    }
+
+    .phone-item {
+      margin-bottom: 20px;
+      .ml-1.label.label-danger {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .react-tel-input {
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      position: relative;
+      width: 550px;
+    }
+    .react-tel-input .flag-dropdown {
+      display: none;
+    }
+    .react-tel-input input[type="tel"],
+    .react-tel-input input[type="text"] {
+      background: 0;
+      background-color: #fff;
+      border: 0;
+      border-bottom: 2px solid #e8ebed;
+      border-radius: 0;
+      box-shadow: none;
+      -webkit-transition: none;
+      color: #999;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      padding: 0px 12px 0px 0;
+    }
+    .react-tel-input input[type="tel"],
+    .react-tel-input input[type="text"] {
+      position: relative;
+      font-size: 14px;
+      letter-spacing: 0.01rem;
+      z-index: 0;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-left: 48px;
+      margin-left: 0;
+      background: #fff;
+      border: 1px solid #cacaca;
+      border-radius: 5px;
+      line-height: 25px;
+      height: 35px;
+      width: 300px;
+      outline: none;
+    }
+    .react-tel-input input {
+      color: black !important;
+    }
+    .lang-btn-cange {
+      font-size: 14px !important;
+      padding: 7px 35px !important;
+      background: #034163 !important;
+      color: #fff !important;
+      box-shadow: 0px 2px 11px 0px #ccc;
+    }
+
+    .panel.top-home {
+      padding: 0px;
+    }
+
+    .language_select {
+      margin-top: 9px;
+      float: left;
+    }
+  }
+
+  textarea {
+    overflow: auto;
+    resize: vertical;
+  }
+
+  .focus:focus {
+    border-color: rgba(82,168,236,.8);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    outline: 0 none;
+  }
+
+  .btn:focus,
+  .btn:hover {
+    text-decoration: none;
+  }
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #183852;
+    border-color: #153148;
+  } 
+
+  textarea#user_about {
+    resize: none !important;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+  }
+
+  form#update_form button.lang-btn-cange.btn.btn-primary.btn-large {
+    font-size: 14px !important;
+    padding: 7px 35px !important;
+    background: #034163 !important;
+    color: #fff !important;
+    box-shadow: 0px 2px 11px 0px #ccc;
+    margin-left: 23px;
+  }
+  @media (min-width: 767px) {
+    .edit-profile_ .form-wrapper .row.row-condensed.space-4 .col-sm-9 {
+      &.birthday-item {
+        display: flex;
+      }
+      &.phone-item {
+        display: inline-block;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    form#update_form label.text-right.col-sm-3.lang-chang-label {
+      text-align: left !important;
+      padding-bottom: 5px !important;
+    }
+    .edit-profile_ .form-wrapper .row.row-condensed.space-4 {
+      margin-right: 0 !important;
+      .col-sm-9 {
+        &.birthday-item {
+          display: inline;
+        }
+        .select {
+          flex: 0 0 100%;
+          width: 100%;
+        }
+      }
+    }
+    .aside-main-content {
+      padding: 10px 10px !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .edit-profile_ .form-wrapper .row.row-condensed.space-4 {
+      margin-right: 0 !important;
+      .col-sm-9 {
+        &.birthday-item {
+          display: inline;
+        }
+        .select {
+          flex: 0 0 100%;
+          width: 100%;
+        }
+      }
+    }
+    .aside-main-content {
+      padding: 10px 10px !important;
+    }
+  }
+}
+
+

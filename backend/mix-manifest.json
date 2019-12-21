@@ -1,0 +1,14 @@
+{
+    "/js/ListingDetail/app.js": "/js/ListingDetail/app.js",
+    "/js/aboutus/app.js": "/js/aboutus/app.js",
+    "/js/app.js": "/js/app.js",
+    "/js/auth/app.js": "/js/auth/app.js",
+    "/js/blog/app.js": "/js/blog/app.js",
+    "/js/contactus/app.js": "/js/contactus/app.js",
+    "/js/dashboard/app.js": "/js/dashboard/app.js",
+    "/js/help/app.js": "/js/help/app.js",
+    "/js/inbox/app.js": "/js/inbox/app.js",
+    "/js/managelisting/app.js": "/js/managelisting/app.js",
+    "/js/pricing/app.js": "/js/pricing/app.js",
+    "/js/staticpages/app.js": "/js/staticpages/app.js"
+}

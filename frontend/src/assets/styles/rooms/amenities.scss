@@ -1,0 +1,115 @@
+input[type=checkbox]:focus {
+  outline:none
+}
+.amenites_list {
+  background: #fff !important;
+  padding: 20px 20px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  box-shadow: 0px 2px 15px 0px #eaeaea !important;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.amenities_left {
+  float: left;
+  width: 40%;
+  padding: 0 12px;
+}
+.amenities_left h3 {
+  color: #565a5c;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 18px;
+  margin: 5px 0;
+  line-height: 1.2;
+  font-weight: 600;
+  background: #f7f7f7;
+  padding: 10px 15px;
+  color: #23537a;
+  border-radius: 0px !important;
+  margin-top: 13px !important;
+  position: relative;
+  border-left: 4px solid;
+}
+.amenities_right {
+  float: left;
+  width: 60%;
+}
+.amenitie_poduct {
+  display: flex;
+  width: 100%;
+  padding-top: 15px;
+  span {
+    font-size: 16px !important;
+    margin-left: 8px !important;
+    position: relative;
+    top: -3px !important;
+    color: #303030 !important;
+  }
+}
+.label-inline.amenity-label {
+  width: auto !important;
+  padding-bottom: 0 !important;
+}
+.label-inline.amenity-label, .label-inline.amenity-label input {
+  margin: 0;
+}
+.amenities_right label {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
+.amenity-label {
+  margin-right: 0;
+}
+.label-large {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.amenity-label, .pos-rel {
+  position: relative;
+}
+.label-inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+.amenities_right input[type=checkbox], .amenities_right input[type=radio] {
+  position: relative;
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  margin-bottom: -.25em;
+  margin-right: 5px;
+  vertical-align: top;
+  background: #c5c5c5;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0;
+}
+.amenities_right input[type=checkbox]:checked:before, .amenities_right input[type=radio]:checked:before {
+  content: "\2713";
+  position: absolute;
+  font-size: 10px;
+  left: 0;
+  text-align: center;
+  width: 15px!important;
+  color: #fff!important;
+  font-weight: 900;
+  background: #2196f3;
+  height: 15px!important;
+  cursor: pointer;
+  top: auto;
+  margin-top: 0;
+  margin-left: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 992px) {
+  .amenities_left, .amenities_right {
+      width: 100%;
+      padding: 0 12px;
+  }
+  .amenites_list {
+    padding: 20px 20px 20px 10px !important;
+  }
+}

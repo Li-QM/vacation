@@ -1,0 +1,107 @@
+@import '../../assets/js/pages/Dashboard/styles/style.scss';
+
+@media only screen and (max-width:1199px){
+  footer.page-container-responsive.ng-scope {
+    padding: 0 30px;
+}
+.listing-nav-sm {
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+.nav-item {
+  padding-right: 5px;
+}
+#ajax_container {
+  flex: 0 0 80%;
+  max-width: 80%;
+  padding-left: 0;
+}
+.manage_listing_left {
+  text-align: left;
+}
+.amenities_about h4 {
+  text-align: left;
+}
+.content_show .content_right {
+  float: right;
+}
+body .common_listpage a.editbedrooms{
+  font-size: 10px;
+  width: 25px;
+  height: 25px;
+  line-height: 13px;
+  border-radius: 50%;
+}
+}
+
+@media only screen and (max-width:767px) {
+
+  body{
+    .show-collapsed-nav-link {
+      border-right: 0;
+  }
+    .navik-header .logo {
+      padding: 15px;
+
+    }
+    .navik-header .logo img {
+      max-width: 150px;
+  }
+  .ml-header-subnav {
+    padding-right: 0;
+}
+  .show-collapsed-nav-link {
+    width: 100%;
+  }
+  #ajax_container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.manage_listing_left {
+  padding: 0;
+}
+.manage-listing-row-container.row {
+  margin-bottom: 0;
+}
+.social-icon{
+  width: 40px !important;
+  height: 40px !important;
+}
+
+footer.page-container-responsive.ng-scope {
+  padding: 0 15px;
+  text-align: center;
+}
+.manage-listing-header nav {
+  width: 200px !important;
+}
+.subnav {
+  background-color: #3d4042;
+}
+
+
+  }
+}
+
+
+.body .base_text > div a {
+  line-height: 1;
+}
+
+
+
+  .listing-morefilter .listing-morefilter-list ul li label span,  .listing-morefilter .listing-morefilter-list ul li label span:after{
+    background: red;
+  }
+  .listing-morefilter .listing-morefilter-list ul li label input {
+    display: inline-block;
+  }
+
+
+  .listing-list-topbar h6 span{
+    margin-right: 10px;
+  }

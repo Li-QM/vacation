@@ -1,0 +1,168 @@
+.room_term {
+  .manage-listing-content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div#js-manage-listing-content {
+      background: #f3f6f8;
+      border: none;
+      flex: 0 0 75%;
+      max-width: 75%;
+
+      .common_listpage {
+        padding: 20px 10px;
+        display: inline-block;
+        width: 100%;
+
+        .content_show {
+          padding: 0;
+          margin: 0;
+          border-bottom: none !important;
+
+          .content_showhead {
+            width: 100%;
+            float: left;
+            padding: 0;
+
+            h1 {
+              line-height: 1.2;
+              font-size: 26px;
+              margin-bottom: 7px;
+              font-weight: 600;
+              color: #444;
+              font-family: "Nunito" !important;
+            }
+
+            p {
+              margin-bottom: 10px;
+              font-size: 16px;
+              line-height: 1.5;
+            }
+          }
+
+          .content_right {
+            display: inline-block;
+            text-align: right;
+            float: none;
+            width: 100%;
+            margin: 0 0 0 0;
+            position: relative;
+            z-index: 99;
+          }
+        }
+
+        .base_priceamt {
+          display: flex;
+          background: #fff !important;
+          padding: 20px 20px !important;
+          border-radius: 4px;
+          margin-bottom: -5px;
+
+          &.row {
+            margin: 0;
+          }
+
+          .base_decs.col-12 {
+            padding: 0;
+
+            h3 {
+              font-size: 22px;
+              margin-bottom: 9px;
+              font-weight: 600;
+              color: #444;
+              font-family: "Nunito" !important;
+            }
+          }
+
+          .base_text_container.col-12 {
+            padding: 0;
+            .base_amut {
+              padding: 0;
+            }
+          }
+        }
+
+        .calendar_savebuttons {
+          display: inline-block;
+          width: 100%;
+          margin: 12px 0 0 0 !important;
+          text-align: right;
+        }
+
+        .content_right a,
+        .calendar_savebuttons a {
+          font-size: 14px !important;
+          line-height: 1.5;
+          padding: 7px 23px !important;
+        }
+      }
+
+      .manage_listing_left {
+        display: inline-block;
+        width: 100%;
+        padding: 30px 20px 20px 20px !important;
+        background: #fff;
+        margin-top: 32px;
+        .amenities_about {
+          border: none !important;
+          padding: 0 !important;
+          h4 {
+            color: #444;
+            font-size: 22px !important;
+            margin-bottom: 7px !important;
+            font-weight: 600;
+            font-family: "Nunito" !important;
+            word-break: break-word;
+          }
+          p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #444;
+          }
+        }
+      }
+    }
+
+    .listing_desc {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  @media (max-width: 1024px) {
+    .common_listpage {
+      padding: 20px 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .manage_listing_left {
+      padding: 15px 10px 10px 10px !important;
+    }
+    .col-md-4.col-sm-12.listing_desc {
+      padding: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .manage_listing_left {
+      display: block;
+      max-width: 100%;
+      flex: 0 0 100%;
+      margin-top: 0 !important;
+    }
+    .amenities_about h3,
+    .amenities_about h4,
+    .manage_listing_left {
+      text-align: center;
+    }
+    div#js-manage-listing-content {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+    .manage-listing-content-wrapper.clearfix .col-md-3.col-sm-12.listing_desc {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+}

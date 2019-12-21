@@ -1,0 +1,500 @@
+.body__room-basic {
+  div#js-manage-listing-content .js-section.list_hover.col-sm-12.bathbedrj {
+    background: #fff !important;
+    padding: 20px 20px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow: 0px 2px 15px 0px #eaeaea !important;
+    margin-bottom: 20px;
+  }
+  .base_decs h3,
+  .js-section.list_hover > h4 {
+    color: #565a5c;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .base_decs label {
+    padding-top: 0;
+    font-size: 15px;
+    color: #565a5c;
+  }
+  .base_decs input {
+    height: 42px;
+  }
+  .base_decs {
+    width: 40%;
+    float: left;
+  }
+  .base_text {
+    float: left;
+    width: 60%;
+  }
+  .base_decs h3 {
+    color: #5a5a5a;
+    float: left;
+    font-size: 17px;
+    line-height: 20px;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .base_text label {
+    padding-top: 0;
+  }
+  .base_text input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    float: left;
+    font-size: 14px;
+    padding: 7px 10px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    width: 100%;
+    display: table-cell;
+    height: 42px;
+    color: #000;
+  }
+  .base_text .price_doller {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 13px;
+    width: 20px;
+    text-align: center;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-right: 0;
+    color: #404040;
+  }
+  .base_select.select {
+    display: inline-block;
+    width: 100%;
+  }
+  .base_select.select select {
+    height: 40px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    color: #000;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+
+  .requiredRJ {
+    color: #f90000;
+  }
+
+  button#js-add-bedrooms,
+  button#js-add-bathrooms {
+    background: #003653 !important;
+    display: inline-block;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 3px;
+    box-shadow: 0px 5px 15px 0px #ccc;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  @media (max-width: 992px) {
+    .base_decs {
+      width: 30%;
+    }
+    .base_text {
+      width: 70%;
+    }
+  }
+  @media (max-width: 767px) {
+    .base_decs,
+    .base_text {
+      width: 100%;
+    }
+    .base_amut,
+    .early_bird_list {
+      margin-bottom: 10px;
+    }
+
+    .detail_list .base_select {
+      display: block;
+      width: auto;
+      margin: 0 -12px;
+    }
+    .detail_list .base_decs,
+    .detail_list .base_text {
+      width: 100%;
+    }
+  }
+
+  .js-section.list_hover.col-sm-12.bathbedrj .bedroom_rj {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ecebeb;
+    padding: 0 0 15px;
+    h5 {
+      margin-top: 3px !important;
+      margin-bottom: 3px !important;
+      font-size: 18px !important;
+      color: #003653;
+      font-family: "Nunito" !important;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 5px;
+      margin-top: 0;
+      line-height: 1.5;
+      padding-right: 72px;
+    }
+  }
+
+  .bedroom_rj a.editbathrooms,
+  .bedroom_rj a.editbedrooms {
+    background-color: #3395ff;
+    border-color: #3395ff;
+  }
+  .bedroom_rj a.deletebathrooms,
+  .bedroom_rj a.deletebedrooms {
+    background-color: #da4f4a;
+    border-color: #da4f4a;
+    margin-top: 2px;
+  }
+  .bedroom_rj a.deletebathrooms,
+  .bedroom_rj a.deletebedrooms,
+  .bedroom_rj a.editbathrooms,
+  .bedroom_rj a.editbedrooms {
+    font-size: 14px;
+    color: #fff;
+    padding: 4px 2px;
+    border-radius: 2px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    display: block;
+
+    i,
+    svg {
+      margin-top: 6px;
+    }
+  }
+  .basic-item-text {
+    width: 100%;
+  }
+
+  .rj_list_property {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 992px) {
+    div#js-manage-listing-content .js-section.list_hover.col-sm-12.bathbedrj {
+      display: flex;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    div#js-manage-listing-content .js-section.list_hover.col-sm-12.bathbedrj {
+      display: flex;
+    }
+    .base_decs {
+      width: 30%;
+    }
+    .base_text {
+      width: 70%;
+    }
+    .js-section.list_hover.col-sm-12.bathbedrj .base_decs h4 {
+      font-size: 17px !important;
+      font-weight: 700 !important;
+    }
+    .base_text a.editbedrooms {
+      width: 25px !important;
+      height: 25px !important;
+      font-size: 11px !important;
+    }
+    .js-section.list_hover.col-sm-12.bathbedrj .base_text a.deletebedrooms,
+    .base_text .bedroom_rj a.deletebathrooms {
+      width: 25px !important;
+      height: 25px !important;
+      font-size: 11px !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    div#js-manage-listing-content .js-section.list_hover.col-sm-12.bathbedrj {
+      display: inline-block;
+    }
+    .base_decs,
+    .base_text {
+      width: 100%;
+    }
+    .base_decs h4 {
+      font-size: 13px !important;
+    }
+  }
+}
+
+.styles_modal__gNwvD.styles_modalCenter__L9F2w {
+  .panel-body,
+  .panel-footer,
+  .panel-header,
+  ol.panel-body > li,
+  ul.panel-body > li {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .panel-header {
+    border: 0;
+    color: #565a5c;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid #dce0e0;
+  }
+
+  .panel-header {
+    background: #034163 !important;
+  }
+
+  .h4.js-address-nav-heading {
+    font-size: 1.575rem;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.33px;
+    font-weight: 700;
+  }
+  .panel.rjbedbathpanel form {
+    float: left;
+    width: 100%;
+  }
+  .panel.rjbedbathpanel .panel-body {
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+  .bathfeaturerj,
+  .panel.rjbedbathpanel label {
+    display: inline-block;
+    font-weight: 700;
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+
+  input[type="text"] {
+    border: 1px solid #dadada !important;
+    border-radius: 2px;
+    float: left;
+    font-size: 14px;
+    padding: 7px 14px !important;
+    height: 43px !important;
+  }
+
+  .force-oneline button {
+    font-size: 14px !important;
+    padding: 7px 23px !important;
+    background: #034163 !important;
+    color: #fff !important;
+    font-family: "Nunito" !important;
+    margin-left: 10px !important;
+    border: 0;
+  }
+
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.1rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  form#editbedroomsForm select.form-control.rjcontrol {
+    border: 1px solid #dadada !important;
+    border-radius: 2px;
+    float: left;
+    font-size: 14px;
+    padding: 7px 14px !important;
+    height: 43px !important;
+    margin: 0 0 10px 0 !important;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  label {
+    display: inline-block;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    margin-bottom: 0.5rem;
+  }
+
+  .bathfeaturerj,
+  .panel.rjbedbathpanel label {
+    font-weight: 700;
+  }
+
+  .input-prefix,
+  .input-suffix,
+  [type="date"],
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select,
+  textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #565a5c;
+  }
+
+  [type="date"],
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select,
+  textarea {
+    transition: border-color 0.2s;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: relative;
+    -webkit-appearance: none;
+    height: 1.25em;
+    width: 1.25em;
+    margin-bottom: -0.25em;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  input[type='text'] {
+    border: 1px solid #dadada !important;
+    border-radius: 2px;
+    float: left;
+    font-size: 14px;
+    padding: 7px 14px !important;
+    height: 43px !important;
+  }
+  input:-internal-autofill-selected {
+    background-color: rgb(232, 240, 254) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+  }
+  input[type=checkbox]:checked:before {
+    content: "\2713";
+    position: absolute;
+    font-size: .85em;
+    left: 1px;
+    text-align: center;
+    width: 1.25em;
+    color: #008489!important;
+  }
+  input[type=checkbox]:focus {
+    outline: 0;
+  }
+
+  input.form-control:focus, select.form-control:focus, textarea.form-control:focus {
+    border-color: #777;
+    outline: 0;
+    box-shadow: none;
+    color: #555;
+    transition: all .3s ease;
+}
+  .rjlabelroom input.checkbox_check {
+    float: left;
+  }
+  form#editbathroomsForm .rjlabelroom input[type="checkbox"] {
+    border-radius: 1px !important;
+  }
+
+  .bathfeaturerj,
+  .panel.rjbedbathpanel label {
+    font-weight: 700;
+  }
+
+  .bathfeaturerj {
+    float: left;
+    width: 100%;
+    padding: 0 13px;
+    font-size: 19px;
+  }
+  input.form-control,
+  select.form-control,
+  textarea.form-control {
+    background: 0;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 2px solid #e8ebed;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-transition: none;
+    color: #333;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding: 6px 12px 6px 0;
+  }
+
+  .panel-body,
+  .panel-footer,
+  .panel-header,
+  ol.panel-body > li,
+  ul.panel-body > li {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+  }
+  .panel-footer {
+    text-align: right;
+  }
+  .panel.rjbedbathpanel .panel-footer {
+    float: left;
+    width: 100%;
+    padding: 15px;
+  }
+  .styles_closeButton__20ID4 {
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    border: none;
+    padding: 0;
+    background-color: #fff !important;
+    display: flex;
+    width: 40px !important;
+    height: 40px !important;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    svg.styles_closeIcon__1QwbI {
+      margin: 0 auto;
+    }
+  }
+}

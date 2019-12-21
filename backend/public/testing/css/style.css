@@ -1,0 +1,168 @@
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.all
+{
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar
+{
+    padding: 45px 0;
+    background-color: #232b51;
+}
+.nav-link
+{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white!important;
+    padding: 3px 15px!important;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.active .nav-link,
+.nav-link:hover
+{
+    background: #fe9009;
+}
+p
+{
+    font-size: 15px;
+}
+
+/* Section */
+.section
+{
+    color: white;
+    padding: 60px 0;
+    background-color: black;
+    position: relative;
+}
+
+img.center-block
+{
+    margin: auto;
+    display: block;
+    margin-top: 70px;
+}
+
+.section.padding-top
+{
+    padding-top: 180px;
+}
+.section.padding-bottom
+{
+    padding-bottom: 0;
+}
+
+.section img.responsive
+{
+    position: absolute;
+    z-index: 9999999;
+    top: -150px;
+    right: -50px;
+}
+
+.section h2
+{
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+.section h2 span.bg-orange
+{
+    background-color: #fe9009;
+    padding: 0 22px;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+.section h2 span.orange
+{
+    color: #ffb028;
+}
+.section h4
+{
+    font-weight: normal;
+    line-height: 1.3;
+}
+.section .btn
+{
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    background: #fe9009;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 9px 48px;
+    margin-top: 30px;
+    
+}
+.section .btn.margin
+{
+    margin-bottom: 100px;
+}
+
+.section input[type="text"],
+.section textarea
+{
+    width: 100%;
+    margin: 6px 0;
+    border: 1px solid white;
+    background: #3f478e;
+    border-radius: 5px;
+    padding: 8px 20px;
+    color: white;
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+.section textarea
+{
+    height: 160px;
+}
+
+
+.section.light-blue
+{
+    background-color: #232b51;
+}
+.section.dark-blue
+{
+    background-color: #191931;
+}
+.section.orange
+{
+    background-color: #ffb028;
+    color: #13172b;
+}
+.section.blue
+{
+    background-color: #0362ff;
+}
+.section.green
+{
+    background-color: #53ae00;
+}
+
+@media (max-width: 991px)
+{
+    .section img.responsive
+    {
+        position: static;
+    }
+}

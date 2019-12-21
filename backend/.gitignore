@@ -1,0 +1,22 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+/database/migrations/vacati60_main.sql
+#/public
+/vendor
+.env
+*.bak
+
+# dependencies
+/node_modules
+
+# Firebase
+.vscode/settings.json
+package-lock.json
+
+/public/mix-manifest.json
+
+#robots
+
+#others
+ca.homestead.homestead.crt
+local.vacation.rentals.fixing.crt

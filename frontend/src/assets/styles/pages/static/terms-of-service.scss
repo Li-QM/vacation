@@ -1,0 +1,60 @@
+.text-wrap {
+	white-space: normal !important;
+}
+#page_content {
+	font-family: 'Source Sans Pro', sans-serif !important;
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.6;
+}
+#page_content h4 {
+	font-size: 20px;
+}
+#page_content p {
+	margin-bottom: 1.5rem;
+}
+#page_content a {
+	transition: color .15s ease;
+	text-decoration: none;
+}
+#page_content a {
+	background-color: transparent;
+	line-height: inherit;
+}
+#page_content a, #page_content body {
+	color: #333;
+}
+#page_content *, #page_content :after, #page_content :before {
+	box-sizing: border-box;
+}
+#page_content h1, #page_content h2, #page_content h3, #page_content h4, #page_content h5, #page_content h6 {
+	font-weight: 400;
+	margin-top: 2.28571rem;
+}
+#page_content h1, #page_content h2, #page_content h3, #page_content h4, #page_content h5, #page_content h6 {
+	color: #444;
+	letter-spacing: .25px;
+	margin-bottom: .78571rem;
+}
+#page_content h1, #page_content h2, #page_content h3, #page_content h4, #page_content h5, #page_content h6 {
+	color: #444;
+	letter-spacing: .25px;
+	margin-bottom: .78571rem;
+}
+#page_content .button, #page_content body, #page_content h1, #page_content h2, #page_content h3, #page_content h4, #page_content h5, #page_content h6 {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+#page_content *, #page_content :after, #page_content :before {
+	box-sizing: border-box;
+}
+
+.page-style-null {
+	background: #f9f9f9;
+	padding: 50px 0 2px;
+}
+.page-style-null .row-space-top-6.row-space-16.text-wrap {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

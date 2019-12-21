@@ -1,0 +1,1 @@
+export {FrontendLayout} from './Frontend';

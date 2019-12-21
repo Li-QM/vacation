@@ -1,0 +1,82 @@
+/*================= END ===============*/
+
+.page-style-null .row-space-top-6.row-space-16.text-wrap {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page-style-null p#page_content > h1 + p img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: -9px;
+}
+.page-style-null p#page_content > h1 + p {
+    float: left;
+    width: 50%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.page-style-null p#page_content > h1 + p + p {
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    font-family: "Nunito" !important;
+    line-height: 1.6;
+    padding-left: 50px;
+    padding-top: 44px;
+    margin-bottom: 110px;
+}
+.page-style-null {
+    background: #f9f9f9;
+    padding: 50px 0 2px;
+}
+.page-style-null .info-item__title.space-2.space-top-2 span {
+    font-size: 21px;
+    text-align: center;
+    color: #23537a;
+    background-image: url(https://www.channelassist.com/wp-content/uploads/2016/11/handshake.png);
+    padding-left: 42px;
+    background-size: 34px;
+    background-repeat: no-repeat;
+    margin-top: 30px !important;
+    display: inline-block;
+    font-family: "Nunito" !important;
+}
+.page-style-null .info-item__title.space-2.space-top-2 + .space-top-2 span {
+    background: no-repeat;
+    display: none;
+}
+.page-style-null .info-item__body {
+    font-size: 18px;
+    font-family: "Nunito" !important;
+}
+/*================= END ===============*/
+
+
+@media (max-width:991px){
+	.page-style-null p#page_content > h1 + p + p {
+	    float: left;
+	    width: 50%;
+	    font-size: 16px;
+	    font-family: "Nunito" !important;
+	    padding-left: 30px;
+	    padding-top: 15px;
+	    margin-bottom: 25px;
+	    padding-right: 18px;
+	}
+}
+
+@media (max-width:767px){
+	.page-style-null p#page_content > h1 + p + p {
+	    float: none;
+	    width: 100%;
+	}
+	.page-style-null p#page_content > h1 + p {
+	    float: none;
+	    width: 100%;
+	}
+	.page-style-null p#page_content > h1 + p + p {
+	    padding-left: 0;
+	}
+}

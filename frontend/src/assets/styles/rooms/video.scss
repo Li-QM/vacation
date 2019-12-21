@@ -1,0 +1,72 @@
+.input-prefix, .input-suffix, [type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], select, textarea {
+  display: block;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+input#video {
+  border: 1px solid #dadada !important;
+  border-radius: 2px;
+  float: left;
+  font-size: 14px;
+  padding: 7px 14px !important;
+  height: 43px !important;
+  margin-bottom: 11px;
+}
+
+div#help-panel-video input + p + span {
+  background: #febebe;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  font-family: "Nunito" !important;
+  font-size: 15px !important;
+  letter-spacing: 0.5px;
+  margin: 0 !important;
+}
+
+iframe#rooms_video_preview {
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0px 0px 17px 0px #ccc;
+}
+
+.saving-progress {
+  float: right;
+  margin-bottom: -32px;
+  color: #3fb34f;
+}
+.error-value-required {
+  color: #b23f42 !important;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table;
+}
+
+
+.row-space-top-1 {
+  margin-top: 6.25px;
+}
+.row-space-top-2 {
+  margin-top: 12.5px;
+}
+.row-space-2 {
+  margin-bottom: 12.5px;
+}
+.m0 {
+  margin: 0px;
+}
+.p0 {
+  padding: 0px;
+}
+.pt-10{
+  padding-top: 10px;
+}
+.pb-5{
+  padding-bottom: 5px;
+}

@@ -1,0 +1,134 @@
+.text-primary {
+    color: #1abc9c!important;
+ }
+
+ .error-400, .error-403, .error-404, .error-500, .error-503, .login {
+    align-items: center;
+    background-color: #2196f3;
+    display: flex;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+ }
+ .common-img-bg {
+    background-size: cover;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    height: 100%;
+ }
+ .bg-primary {
+    background-color: #1abc9c!important;
+    color: #fff;
+ }
+
+ .auth-box {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px 0 0;
+    padding: 20px;
+ }
+
+ .login h3, .login-card h3 {
+    color: #666;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+ }
+
+ .input-group {
+    margin-bottom: 1.25em;
+ }
+
+ .border-radius-30px {
+    border-radius: 30px!important;
+ }
+ .btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 23px;
+ }
+ .btn-primary, .sweet-alert button.confirm, .wizard>.actions a {
+    border-color: #1abc9c;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease-in .3s;
+ }
+ .btn-primary, .wizard>.actions a {
+    background-color: #1abc9c;
+ }
+ .btn {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 19px;
+    font-family: open sans;
+ }
+
+
+ .input-group .form-control {
+    position: relative;
+    z-index: 2;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-bottom: 0;
+ }
+ .border-radius-30px {
+    border-radius: 30px!important;
+ }
+ .form-control {
+    font-size: 14px;
+    border-radius: 2px;
+    border-width: 2px;
+ }
+ .form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+ }
+ .form-control:focus{border-color: #1abc9c !important}
+ 
+ button, input, select, textarea {
+    line-height: inherit;
+ }
+ [role=button], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+ }
+ button, input {
+    overflow: visible;
+ }
+ button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    margin: 0;
+ }
+ .btn-primary:hover {
+    background-color: #49ccb2;
+    border-color: #49ccb2;
+ }
+
+ @media(min-width: 700px) {
+   .auth-body {
+      min-width: 450px;
+   }
+}
+@media(max-width: 700px) {
+   .auth-body {
+      min-width: 350px;
+   }
+}

@@ -1,0 +1,58 @@
+@import "assets/styles/variables";
+
+.your-res_ {
+  .media-photo {
+    img {
+      border-radius: 10px;
+      box-shadow: 0px 6px 32px 2px rgb(193, 193, 193);
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+    }
+  }
+  .panel-body {
+    position: relative;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    color: rgba(85, 85, 85, 0.81);
+    width: 100%;
+    margin-bottom: 1rem;
+    tbody {
+      text-align: left;
+      border-bottom: none;
+    }
+    tr {
+      th {
+        padding: 8px;
+      }
+      td {
+        padding: 8px;
+        border-top: 1px solid #dce0e0;
+        vertical-align: top;
+
+        p {
+          margin: 0;
+          text-align: center;
+          color: $blue;
+        }
+        .media {
+          @media (max-width: $break-991) {
+            display: block;
+          }
+        }
+        a {
+          @media (max-width: $break-991) {
+            padding-left: 0;
+            padding-top: 5px;
+            display: block;
+          }
+          // padding-left: 15px;
+        }
+      }
+    }
+  }
+}

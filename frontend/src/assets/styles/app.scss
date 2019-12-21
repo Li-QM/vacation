@@ -1,0 +1,91 @@
+@import 'mixin';
+@import 'animations';
+@import 'animate';
+@import 'color';
+@import 'layout';
+@import 'bootstrap/scss/bootstrap-grid';
+
+.App {
+	overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgb(245, 248, 250);
+	font-family: 'Nunito';
+	font-size: .9rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.page-container-responsive {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+	width: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (min-width: 1100px) {
+	.page-container-responsive {
+		max-width: 1170px;
+		padding: 0 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.page-container-responsive {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+	.page-container-responsive {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.App main {
+  @media (min-width: 1200px) {
+    margin-top: 90px;
+  }
+  @media (max-width: 1200px) {
+    margin-top: 132px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+section {
+	width: 100%;
+}
+
+.form-group input[type='radio'] {
+	border-radius: 50% !important;
+	height: 18px !important;
+	width: 18px !important;
+	padding: 0px !important;
+	margin-right: 4px !important;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:hover {
+	background: #23537a;
+}
+
+::-webkit-scrollbar-track {
+	background: #e6e6e6;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 5px;
+}
